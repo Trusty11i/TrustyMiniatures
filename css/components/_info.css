@@ -1,0 +1,24 @@
+.info {
+    max-width: 70%;
+}
+
+.info:first-child {
+    margin-top: 160px;
+}
+
+.info:last-child {
+    margin-bottom: 100px;
+}
+
+.info__text {
+    margin-top: 40px;
+}
+
+.info__descr {
+    margin-top: 20px;
+}
+
+.info__link {
+    color: blue;
+    text-decoration: underline;
+}
