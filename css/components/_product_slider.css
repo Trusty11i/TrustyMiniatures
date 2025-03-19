@@ -1,0 +1,26 @@
+.product-slider {
+    display: flex;
+    justify-content: right;
+}
+
+.product-slider__thumb {
+    margin-bottom: 10px;
+
+}
+.product-slider__thumbs {
+    max-width: 10%;
+    cursor: pointer;
+    img {
+        pointer-events: none;
+      }
+    margin-right: 10px;
+}
+
+.product-slider__thumb:last-child{
+    margin-bottom: 10px;
+}
+
+.product-slider__main {
+    margin-left: 10px;
+    max-width: 50%
+}
