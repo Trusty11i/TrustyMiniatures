@@ -6,18 +6,18 @@
 @import "_overall.css";
 
 /* components imports */
-@import "./components/_header.css";
-@import "./components/_first.css";
-@import "./components/_become.css";
-@import "./components/_featured.css";
-@import "./components/_slider.css";
-@import "./components/_newsletter.css";
-@import "./components/_video.css";
-@import "./components/_footer.css";
-@import "./components/_product_page.css";
-@import "./components/_product_slider.css";
-@import "./components/_error.css";
-@import "./components/_info.css";
+@import "components/_header.css";
+@import "components/_first.css";
+@import "components/_become.css";
+@import "components/_featured.css";
+@import "components/_slider.css";
+@import "components/_newsletter.css";
+@import "components/_video.css";
+@import "components/_footer.css";
+@import "components/_product_page.css";
+@import "components/_product_slider.css";
+@import "components/_error.css";
+@import "components/_info.css";
 
 
 
