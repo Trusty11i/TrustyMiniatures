@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trusty Miniatures</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="site-container">
+		<div class="menu">
+			<button class="menu__close btn-reset" aria-label="close menu">
+				<span class="menu__close-line"></span>
+				<span class="menu__close-line"></span>
+			</button>
+			<nav class="menu__nav">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="index.html" class="menu__link">Фигурки</a></li>
+					<li class="menu__item"><a href="404.html" class="menu__link">Кейкапы</a></li>
+					<li class="menu__item"><a href="Info.html" class="menu__link">Информация</a></li>
+				</ul>
+			</nav>
+		</div>
+		<header class="header">
+			<div class="container header__container flex">
+				<a href="index.html" class="header__logo logo">Trusty Miniatures</a>
+				<ul class="header__social social header__border">
+					<li class="social__item">
+						<a class="header__logo header__sinfo">Соц-сети</a>
+					</li>
+					<li class="social__item">
+						<a href="https://t.me/TrustAfina" target="_blank" class="social__link social__link--tg" aria-label="Перейти в Telegram"></a>
+					</li>
+					<li class="social__item">
+						<a href="https://www.youtube.com/c/Trusty11" target="_blank" class="social__link social__link--yt" aria-label="Перейти в YouTube"></a>
+					</li>
+				</ul>
+				<!--Кнопка меню со стилем btn-reset, чтобы курсор менял на-->
+				<button class="header__burger burger btn-reset" aria-label="Открыть меню">
+					<!--Создаем 3 палки для кнопки "Меню"--> 
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+				</button>
+			</div>
+		</header>
+		<main class="main">
+			<section class="first">
+				<div class="container first__container">
+					<h1 class="first__title">Уже Знаете, Что Вы Хотите? </h1>
+					<div class="first__bottom">
+            <button onclick="location.href='//t.me/trusty11i'" class="first__btn btn-reset">Написать продавцу</button>
+						<form action="/" class="first__form search-form">
+							<input type="search" class="search-form__field" placeholder="Найти миниатюру">
+							<button type="submit" class="search-form__button btn-reset" aria-label="Найти миниатюру"></button>
+							<div class="search-suggestions"></div> <!-- Сюда будут появляться подсказки -->
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="become">
+				<div class="container">
+					<h2 class="section-title become__title">Каталог</h2>
+					<ul class="become__list">
+						<a href="makima.html" target="_blank" class="catalog__item">
+							<li>
+								<img src="\img\makima\First.jpg" alt="Makima - Chainsaw man" class="catalog_image">
+								<div class="catalog__text">
+									Makima
+								</div>
+							</li>
+						</a>
+						<a href="gawr_gura.html" target="_blank" class="catalog__item">
+							<li>
+								<img src="\img\gura\First.jpg" alt="Gawr Gura - Hololive" class="catalog_image">
+								<div class="catalog__text">
+									Gawr Gura
+								</div>
+							</li>
+						</a>
+						<a href="chloe_sakamata.html" target="_blank" class="catalog__item">
+							<li>
+								<img src="\img\chloe\first.jpg" alt="Chloe Sakamata - Hololive" class="catalog_image">
+								<div class="catalog__text">
+									Chloe Sakamata
+								</div>
+							</li>
+						</a>
+					</ul>
+				</div>
+			</section>
+			<!--<section class="video">
+				<div class="container">
+					<h2 class="section-title section-title--center video__heading">Интересное</h2>
+					<p class="video__descr">Статьи и видео связанные с тем, как я создаю миниатюры.</p>
+					<ul class="grid video__list">
+						<li class="video__item video__item--big video__item--1">
+							<div class="video__text">
+								<a href="#" class="video__category">Destinations</a>
+								<h3 class="video__title">
+									<a href="#">A Guide To Rocky Mountain Vacations</a>
+								</h3>
+							</div>
+						</li>
+						<li class="video__item video__item--2">
+							<button class="btn-reset video__play" aria-label="Play video"></button>
+							<div class="video__text">
+								<a href="#" class="video__category">Destinations</a>
+								<h3 class="video__title">
+									<a href="#">Traveling To Barcelona</a>
+								</h3>
+							</div>
+						</li>
+						<li class="video__item video__item--bigheight video__item--3">
+							<div class="video__text">
+								<a href="#" class="video__category">Destinations</a>
+								<h3 class="video__title">
+									<a href="#">A Guide To Rocky Mountain Vacations</a>
+								</h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>-->
+		</main>
+		<footer class="footer">
+			<div class="container footer__container flex">
+				<nav class="footer__column">
+				</nav>
+				<nav class="footer__column">
+					<h2 class="footer__title">Информация</h2>
+					<ul class="footer__list">
+						<li class="footer__item"><a href="Info.html" class="footer__link">О нас</a></li>
+						<li class="footer__item"><a href="Info.html" class="footer__link">Ресурсы</a></li>
+						<li class="footer__item"><a href="Info.html" class="footer__link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer__bottom">
+				<div class="container bottom-container flex">
+					<small class="footer__copy">© 2025 Designed by Trusty11. All rights
+						reserved.</small>
+					<!--<ul class="footer__links">
+						<li class="footer__links-item"><a href="#" class="footer__link">Terms of Service</a></li>
+						<li class="footer__links-item"><a href="#" class="footer__link">Privacy Policy</a></li>
+					</ul>-->
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="libs/swiper.min.js"></script>
+	<script src="libs/inputmask.min.js"></script>
+	<script src="libs/just-validate.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/search.js"></script>
+</body>
+</html>
