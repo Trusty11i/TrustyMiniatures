@@ -57,13 +57,13 @@
 }
 
 .social__link--tg {
-	background-image: url("/img/Telegram.svg");
+	background-image: url("img/Telegram.svg");
 	width: 20px;
 	height: 20px;
 }
 
 .social__link--yt {
-	background-image: url("/img/youtube.png");
+	background-image: url("img/youtube.png");
 	width: 20px;
 	height: 20px;
 }
