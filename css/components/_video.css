@@ -75,7 +75,7 @@
 }
 
 .video__play {
-	background-image: url("img/play.svg");
+	background-image: url("../img/play.svg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -118,29 +118,29 @@
 }
 
 .video__item--1 {
-	background-image: url("img/video-1.jpg");
+	background-image: url("../img/video-1.jpg");
 }
 
 .video__item--2 {
-	background-image: url("img/video-2.jpg");
+	background-image: url("../img/video-2.jpg");
 }
 
 .video__item--3 {
-	background-image: url("img/video-3.jpg");
+	background-image: url("../img/video-3.jpg");
 }
 
 .video__item--4 {
-	background-image: url("img/video-4.jpg");
+	background-image: url("../img/video-4.jpg");
 }
 
 .video__item--5 {
-	background-image: url("img/video-5.jpg");
+	background-image: url("../img/video-5.jpg");
 }
 
 .video__item--6 {
-	background-image: url("img/video-6.jpg");
+	background-image: url("../img/video-6.jpg");
 }
 
 .video__item--7 {
-	background-image: url("img/video-7.jpg");
+	background-image: url("../img/video-7.jpg");
 }
