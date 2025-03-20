@@ -1,7 +1,7 @@
 .become {
 	background-color: #9dedda;
-	padding-top: 150px;
-	padding-bottom: 120px;
+	padding-top: 50px;
+	padding-bottom: 100px;
 }
 
 .become__title {
@@ -9,7 +9,7 @@
 }
 
 .become__list {
-	margin-top: 95px;
+	margin-top: 50px;
 	display: flex;
 	flex-wrap: wrap;
 }
