@@ -23,16 +23,18 @@
   </div>
 
   <script>
-    // ✅ 2. Настройка Firebase
+    // ✅ 2. Настройка Firebase (обновлено)
     const firebaseConfig = {
-      apiKey: "YOUR_API_KEY",
-      authDomain: "your-project-id.firebaseapp.com",
-      databaseURL: "https://your-project-id.firebaseio.com",
-      projectId: "your-project-id",
-      storageBucket: "your-project-id.appspot.com",
-      messagingSenderId: "XXXXXX",
-      appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyDVKYra8RTGGXsMyRHc9nIO2aDXW9r5g08", 
+    authDomain: "trustyminiatures.firebaseapp.com",
+    projectId: "trustyminiatures",
+    storageBucket: "trustyminiatures.firebasestorage.app",
+    messagingSenderId: "935589607784",
+    appId: "1:935589607784:web:a42320384780140156fedd",
+    measurementId: "G-S7N2563QX0",
+    databaseURL: "https://trustyminiatures-default-rtdb.firebaseio.com"
     };
+
     firebase.initializeApp(firebaseConfig);
     const auth = firebase.auth();
     const db = firebase.database();
