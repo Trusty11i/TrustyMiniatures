@@ -1,0 +1,90 @@
+<!-- ✅ 1. HTML-страница авторизации -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация</title>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+</head>
+<body>
+  <h2>Вход по email-ссылке</h2>
+  <input type="email" id="email" placeholder="Введите email">
+  <button onclick="sendSignInLink()">Отправить ссылку для входа</button>
+
+  <div id="settings" style="display: none;">
+    <label>
+      <input type="checkbox" id="toggle18" onchange="saveSetting()">
+      Показывать 18+ контент
+    </label>
+    <button onclick="logout()">Выход</button>
+  </div>
+
+  <script>
+    // ✅ 2. Настройка Firebase
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "your-project-id.firebaseapp.com",
+      databaseURL: "https://your-project-id.firebaseio.com",
+      projectId: "your-project-id",
+      storageBucket: "your-project-id.appspot.com",
+      messagingSenderId: "XXXXXX",
+      appId: "YOUR_APP_ID"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.database();
+
+    // ✅ 3. Отправка ссылки на email
+    function sendSignInLink() {
+      const email = document.getElementById("email").value;
+      const actionCodeSettings = {
+        url: window.location.href,
+        handleCodeInApp: true
+      };
+      auth.sendSignInLinkToEmail(email, actionCodeSettings)
+        .then(() => {
+          window.localStorage.setItem("emailForSignIn", email);
+          alert("Письмо отправлено. Проверьте почту.");
+        })
+        .catch(console.error);
+    }
+
+    // ✅ 4. Обработка ссылки при переходе из письма
+    window.addEventListener('DOMContentLoaded', () => {
+      if (auth.isSignInWithEmailLink(window.location.href)) {
+        let email = window.localStorage.getItem("emailForSignIn");
+        if (!email) email = window.prompt("Введите email для подтверждения:");
+        auth.signInWithEmailLink(email, window.location.href)
+          .then((result) => {
+            document.getElementById("settings").style.display = "block";
+            loadSettings(result.user.uid);
+          })
+          .catch(console.error);
+      }
+    });
+
+    // ✅ 5. Сохранение настройки 18+ контента
+    function saveSetting() {
+      const uid = auth.currentUser.uid;
+      const show18 = document.getElementById("toggle18").checked;
+      db.ref('users/' + uid).set({ show18 });
+    }
+
+    // ✅ 6. Загрузка настройки при входе
+    function loadSettings(uid) {
+      db.ref('users/' + uid).once('value').then(snapshot => {
+        const val = snapshot.val();
+        if (val && val.show18) document.getElementById("toggle18").checked = true;
+      });
+    }
+
+    // ✅ 7. Выход из аккаунта
+    function logout() {
+      auth.signOut().then(() => location.reload());
+    }
+  </script>
+</body>
+</html>
