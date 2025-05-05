@@ -230,15 +230,22 @@ body.popup-menu-open {
     margin-top: 4px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1080px) {
     .logo{
-        display: none;
+        font-size: 16px;
+        left: 5%;
     }
-    .header__social{
-        justify-content: start;
-        margin-left: 10%;
+    .burger{
+        right: 5%;
     }
     .header__container{
-        padding: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo{
+        font-size: 12px;
     }
 }
