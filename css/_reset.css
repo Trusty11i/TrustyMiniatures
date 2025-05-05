@@ -1,0 +1,47 @@
+/* 1. Убираем все отступы и границы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 2. Наследуем шрифт */
+  html, body {
+    height: 100%;
+    font-family: sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* 3. Удаляем стандартные стили списков */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* 4. Убираем подчеркивание у ссылок */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* 5. Наследуем шрифт у форм */
+  input, button, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+  }
+  
+  /* 6. Убираем особенности таблиц */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* 7. Делает изображения и видео отзывчивыми */
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  

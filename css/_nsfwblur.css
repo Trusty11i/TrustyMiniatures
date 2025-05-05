@@ -1,0 +1,20 @@
+.blurred {
+    filter: blur(6px);
+    position: relative;
+    pointer-events: none;
+  }
+  
+  .blurred::after {
+    content: "18+ контент скрыт";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+    max-width: 80%;
+  }

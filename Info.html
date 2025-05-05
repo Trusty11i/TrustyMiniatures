@@ -1,105 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Trusty Miniatures</title>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP&family=Orbitron:wght@500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/_reset.css">
+    <link rel="stylesheet" href="/css/_normalize.css">
+
+    <link rel="stylesheet" href="/css/_variables.css">
+    <link rel="stylesheet" href="/css/_global.css">
+
+    <link rel="stylesheet" href="/css/_fonts.css">
+    <link rel="stylesheet" href="/css/_overall.css">
+
+    <link rel="stylesheet" href="/css/_vendor.css">
+
+    <link rel="stylesheet" href="/css/components/_faq.css">
+    <link rel="stylesheet" href="/css/components/header.css">
+    <link rel="stylesheet" href="/css/components/_footer.css">
+
 </head>
 <body>
-	<div class="site-container">
-		<div class="menu">
-			<button class="menu__close btn-reset" aria-label="close menu">
-				<span class="menu__close-line"></span>
-				<span class="menu__close-line"></span>
-			</button>
-			<nav class="menu__nav">
-				<ul class="menu__list">
-					<li class="menu__item"><a href="index.html" class="menu__link">Фигурки</a></li>
-					<li class="menu__item"><a href="404.html" class="menu__link">Кейкапы</a></li>
-					<li class="menu__item"><a href="Info.html" class="menu__link">Информация</a></li>
-				</ul>
-			</nav>
-		</div>
-		<header class="header">
-			<div class="container header__container flex">
-				<a href="index.html" class="header__logo logo">Trusty Miniatures</a>
-				<ul class="header__social social header__border">
-					<li class="social__item">
-						<a class="header__logo header__sinfo">Соц-сети</a>
-					</li>
-					<li class="social__item">
-						<a href="https://t.me/TrustAfina" target="_blank" class="social__link social__link--tg" aria-label="Перейти в Telegram"></a>
-					</li>
-					<li class="social__item">
-						<a href="https://www.youtube.com/c/Trusty11" target="_blank" class="social__link social__link--yt" aria-label="Перейти в YouTube"></a>
-					</li>
-				</ul>
-				<!--Кнопка меню со стилем btn-reset, чтобы курсор менял на-->
-				<button class="header__burger burger btn-reset" aria-label="Открыть меню">
-					<!--Создаем 3 палки для кнопки "Меню"--> 
-					<span class="burger__line"></span>
-					<span class="burger__line"></span>
-					<span class="burger__line"></span>
-				</button>
-			</div>
-		</header>
-        <main class="container">
-			<div class="info">
-            	<h1 class="info__text">Информация</h1>
-				<p class="info__descr">Все миниатюры выполняются посредством 3D Печати пластиком.
-					Пластик не токсичен. Так-же каждое изделие покрыто акриловым Лаком, что способствует защите 
-					краски от тещин/откалывания.</p>
-				<p class="info__descr">Заказы производятся ТОЛЬКО через Авито/Telegram с ПОЛНОЙ ПРЕДОПЛАТОЙ 
-					(В ситуации, когда товара нет в наличии и мне необходимо сначала его сделать). 
-					Цена доставки - Бесплатная (если ее стоимость меньше 300 Рублей)</p>
-					<p class="info__descr">Передача товара на доставку осуществляется в течении 5 рабочих дней</p>
-					<p class="info__descr">Если вы заказываете товар, которого нет в наличии - Его "создание" 
-						может занять до 1 месяца (Если перед вами нет очереди. Я всегда сообщаю об этом заранее)</p>
-				<h1 class="info__text">Контакты</h1>
-				<h4><a href="https://t.me/TrustAfina" class="info__link">Группа Telegram</a></h4>
-				<h4><a href="https://t.me/trusty11i" class="info__link">Владелец в Telegram</a></h4>
-				<h1 class="info__text">Ресурсы</h1>
-				<p class="info__descr">Многие 3D модели были созданы не мной. Если вы являетесь владельцем и не хотите, 
-					чтобы ваша модель использовалась мною - Kirillchikin2@gmail.com</p>
-				<p class="info__descr">Делать модели самому очень долго и тяжело (Да я плачусь о том, что у меня, в отличии от многих, есть работа и я физически не смогу полностью изучить такие аспекты как 
-					Моделирование, Скульптурирование, Rigging и остальные. Это хобби. И я хочу, чтобы кому-то тоже было приятно.). Как только я накоплю на оборудование
-					и/или у меня будет возможность заказывать модели - данный пункт пропадет.</p>
-					<p class="info__descr">Так-же, каждая, сделанная мной в будущем, модель будет в открытом доступе. Скажем, что я так откупиться пытаюсь.</p>
-				<p class="info__descr">Студия - 3Dmoonn - Модель - Makima</p>
-				<p class="info__descr">Moacir Junior - Gawr Gura</p>
-				<p class="info__descr">Студия - Pikky Prints - Модель - Chloe Sakamata</p>
-			</div>
+    <div class="site-container">
+        <div id="header-placeholder"></div>
+        <main class="main">
+            <section class="faq-section container">
+                <h2>Часто задаваемые вопросы</h2>
+                
+                <div class="faq-item faq-first">
+                    <h3>Какие материалы используются для создания фигурок?</h3>
+                    <p>Фигурки изготовлены из высококачественного PLA пластика, который идеально подходит для 3D печати. Миниатюры покрываются лаком для дополнительной защиты и долговечности.</p>
+                </div>
+            
+                <div class="faq-item">
+                    <h3>Какой процесс создания фигурки?</h3>
+                    <p>Каждая фигурка создается вручную, начиная с 3D печати, затем она проходит этап ручной покраски. Я работаю неспеша и аккуратно, но я человек.</p>
+                </div>
+            
+                <div class="faq-item">
+                    <h3>Как я могу оплатить заказ?</h3>
+                    <p>Работаю по полной предоплате. После оформления заказа через telegram, вам будет выслана информация для оплаты.</p>
+                </div>
+            
+                <div class="faq-item">
+                    <h3>Как долго длится процесс создания и отправки фигурки?</h3>
+                    <p>Изготовление фигурки может занять до 1 месяца в зависимости от сложности заказа. Я тщательно подхожу к каждому этапу работы, чтобы гарантировать качество продукции.</p>
+                </div>
+            
+                <div class="faq-item">
+                    <h3>Какие способы доставки доступны?</h3>
+                    <p>Отправляю заказы через Почту России или СДЭК. Стоимость доставки входит в цену, если вы находитесь в зоне доступности для этих служб. Доставку оплачивать дополнительно не нужно.</p>
+                </div>
+            
+                <div class="faq-item">
+                    <h3>Можно ли заказать кастомную фигурку?</h3>
+                    <p>Да, я могу выполнить кастомные заказы, если у вас имеются свои STL файлы. Пожалуйста, напишите в telegram, чтобы обсудить детали и стоимость.</p>
+                </div>
+            </section>
         </main>
-		<footer class="footer">
-			<div class="container footer__container flex">
-				<nav class="footer__column">
-				</nav>
-				<nav class="footer__column">
-					<h2 class="footer__title">Информация</h2>
-					<ul class="footer__list">
-						<li class="footer__item"><a href="Info.html" class="footer__link">О нас</a></li>
-						<li class="footer__item"><a href="Info.html" class="footer__link">Ресурсы</a></li>
-						<li class="footer__item"><a href="Info.html" class="footer__link">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="footer__bottom">
-				<div class="container bottom-container flex">
-					<small class="footer__copy">© 2025 Designed by Trusty11. All rights
-						reserved.</small>
-					<!--<ul class="footer__links">
-						<li class="footer__links-item"><a href="#" class="footer__link">Terms of Service</a></li>
-						<li class="footer__links-item"><a href="#" class="footer__link">Privacy Policy</a></li>
-					</ul>-->
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script src="libs/swiper.min.js"></script>
-	<script src="libs/inputmask.min.js"></script>
-	<script src="libs/just-validate.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/search.js"></script>
+    <div id="footer-placeholder"></div>
+    </div>
+    <script src="main.js" defer></script>
 </body>
 </html>

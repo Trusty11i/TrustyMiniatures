@@ -1,157 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Trusty Miniatures</title>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Добро пожаловать в TrustyMiniatures — ваш магазин коллекционных фигурок. У нас вы найдете миниатюры известных персонажей из игр, аниме и сериалов с уникальным дизайном и отличной детализацией.">
+    <meta name="keywords" content="коллекционные фигурки, миниатюры, купить фигурку, TrustyMiniatures, фигурки из аниме, фигурки из игр, коллекционные миниатюры, уникальные фигурки, фигурки для коллекции">
+    <meta name="robots" content="index, follow">
+    <title>TrustyMiniatures</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP&family=Orbitron:wght@500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/_reset.css">
+    <link rel="stylesheet" href="/css/_normalize.css">
+
+    <link rel="stylesheet" href="/css/_variables.css">
+    <link rel="stylesheet" href="/css/_global.css">
+
+    <link rel="stylesheet" href="/css/_fonts.css">
+    <link rel="stylesheet" href="/css/_overall.css">
+
+    <link rel="stylesheet" href="/css/_vendor.css">
+
+    <link rel="stylesheet" href="/css/components/header.css">
+    <link rel="stylesheet" href="/css/components/_first.css">
+    <link rel="stylesheet" href="/css/components/_search.css">
+    <link rel="stylesheet" href="/css/components/_links.css">
+    <link rel="stylesheet" href="/css/components/_collage.css">
+    <link rel="stylesheet" href="/css/components/_news.css">
+    <link rel="stylesheet" href="/css/components/_slider.css">
+    <link rel="stylesheet" href="/css/components/_footer.css">
+    <link rel="stylesheet" href="/css/components/_searchsuggesions.css">
+
 </head>
 <body>
-	<div class="site-container">
-		<div class="menu">
-			<button class="menu__close btn-reset" aria-label="close menu">
-				<span class="menu__close-line"></span>
-				<span class="menu__close-line"></span>
-			</button>
-			<nav class="menu__nav">
-				<ul class="menu__list">
-					<li class="menu__item"><a href="index.html" class="menu__link">Фигурки</a></li>
-					<li class="menu__item"><a href="404.html" class="menu__link">Кейкапы</a></li>
-					<li class="menu__item"><a href="Info.html" class="menu__link">Информация</a></li>
-				</ul>
-			</nav>
-		</div>
-		<header class="header">
-			<div class="container header__container flex">
-				<a href="index.html" class="header__logo logo">Trusty Miniatures</a>
-				<ul class="header__social social header__border">
-					<li class="social__item">
-						<a class="header__logo header__sinfo">Соц-сети</a>
-					</li>
-					<li class="social__item">
-						<a href="https://t.me/TrustAfina" target="_blank" class="social__link social__link--tg" aria-label="Перейти в Telegram"></a>
-					</li>
-					<li class="social__item">
-						<a href="https://www.youtube.com/c/Trusty11" target="_blank" class="social__link social__link--yt" aria-label="Перейти в YouTube"></a>
-					</li>
-				</ul>
-				<!--Кнопка меню со стилем btn-reset, чтобы курсор менял на-->
-				<button class="header__burger burger btn-reset" aria-label="Открыть меню">
-					<!--Создаем 3 палки для кнопки "Меню"--> 
-					<span class="burger__line"></span>
-					<span class="burger__line"></span>
-					<span class="burger__line"></span>
-				</button>
-			</div>
-		</header>
-		<main class="main">
-			<section class="first">
-				<div class="container first__container">
-					<h1 class="first__title">Уже Знаете, Что Вы Хотите? </h1>
-					<div class="first__bottom">
-            <button onclick="location.href='//t.me/trusty11i'" class="first__btn btn-reset">Написать продавцу</button>
-						<form action="/" class="first__form search-form">
-							<input type="search" class="search-form__field" placeholder="Найти миниатюру">
-							<button type="submit" class="search-form__button btn-reset" aria-label="Найти миниатюру"></button>
-							<div class="search-suggestions"></div> <!-- Сюда будут появляться подсказки -->
-						</form>
-					</div>
-				</div>
-			</section>
-			<section class="become">
-				<div class="container">
-					<h2 class="section-title become__title">Каталог</h2>
-					<ul class="become__list">
-						<a href="makima.html" target="_blank" class="catalog__item">
-							<li>
-								<img src="img\makima\First.jpg" alt="Makima - Chainsaw man" class="catalog_image">
-								<div class="catalog__text">
-									Makima
-								</div>
-							</li>
-						</a>
-						<a href="gawr_gura.html" target="_blank" class="catalog__item">
-							<li>
-								<img src="img\gura\First.jpg" alt="Gawr Gura - Hololive" class="catalog_image">
-								<div class="catalog__text">
-									Gawr Gura
-								</div>
-							</li>
-						</a>
-						<a href="chloe_sakamata.html" target="_blank" class="catalog__item">
-							<li>
-								<img src="img\chloe\First.jpg" alt="Chloe Sakamata - Hololive" class="catalog_image">
-								<div class="catalog__text">
-									Chloe Sakamata
-								</div>
-							</li>
-						</a>
-					</ul>
-				</div>
-			</section>
-			<!--<section class="video">
-				<div class="container">
-					<h2 class="section-title section-title--center video__heading">Интересное</h2>
-					<p class="video__descr">Статьи и видео связанные с тем, как я создаю миниатюры.</p>
-					<ul class="grid video__list">
-						<li class="video__item video__item--big video__item--1">
-							<div class="video__text">
-								<a href="#" class="video__category">Destinations</a>
-								<h3 class="video__title">
-									<a href="#">A Guide To Rocky Mountain Vacations</a>
-								</h3>
-							</div>
-						</li>
-						<li class="video__item video__item--2">
-							<button class="btn-reset video__play" aria-label="Play video"></button>
-							<div class="video__text">
-								<a href="#" class="video__category">Destinations</a>
-								<h3 class="video__title">
-									<a href="#">Traveling To Barcelona</a>
-								</h3>
-							</div>
-						</li>
-						<li class="video__item video__item--bigheight video__item--3">
-							<div class="video__text">
-								<a href="#" class="video__category">Destinations</a>
-								<h3 class="video__title">
-									<a href="#">A Guide To Rocky Mountain Vacations</a>
-								</h3>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>-->
-		</main>
-		<footer class="footer">
-			<div class="container footer__container flex">
-				<nav class="footer__column">
-				</nav>
-				<nav class="footer__column">
-					<h2 class="footer__title">Информация</h2>
-					<ul class="footer__list">
-						<li class="footer__item"><a href="Info.html" class="footer__link">О нас</a></li>
-						<li class="footer__item"><a href="Info.html" class="footer__link">Ресурсы</a></li>
-						<li class="footer__item"><a href="Info.html" class="footer__link">Контакты</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="footer__bottom">
-				<div class="container bottom-container flex">
-					<small class="footer__copy">© 2025 Designed by Trusty11. All rights
-						reserved.</small>
-					<!--<ul class="footer__links">
-						<li class="footer__links-item"><a href="#" class="footer__link">Terms of Service</a></li>
-						<li class="footer__links-item"><a href="#" class="footer__link">Privacy Policy</a></li>
-					</ul>-->
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script src="libs/swiper.min.js"></script>
-	<script src="libs/inputmask.min.js"></script>
-	<script src="libs/just-validate.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/search.js"></script>
+    <div class="site-container">
+        <div id="header-placeholder"></div>
+        <main class="main">
+            <section class="first">
+                <div class="slider-container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-index="0"><img src="/media/Front-page-slider/Caitlyn.jpg" alt="Кейтлин — Аркейн"></div>
+                        <div class="swiper-slide" data-index="1"><img src="/media/Front-page-slider/Chloe.jpg" alt="Хлоя Сакамата — Hololive"></div>
+                        <div class="swiper-slide" data-index="2"><img src="/media/Front-page-slider/Gura.jpg" alt="Гавр Гура — Hololive"></div>
+                        <div class="swiper-slide" data-index="3"><img src="/media/Front-page-slider/Jack.jpg" alt="Червяк Джек"></div>
+                        <div class="swiper-slide" data-index="4"><img src="/media/Front-page-slider/makima.jpg" alt="Макима — Человек бензопила"></div>
+                        <div class="swiper-slide" data-index="5"><img src="/media/Front-page-slider/loona.jpg" alt="Loona — Адский Босс"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <form class="search__bar__container" action="javascript:void(0);">
+                <div class="search__bar">
+
+                    <input 
+                    type="search" 
+                    class="search-form__field" 
+                    id="main-search-input" 
+                    name="main-search-input" 
+                    autocomplete="search"
+                    placeholder="Найти миниатюру">
+
+                    
+                    <div class="search-suggestions"></div>
+
+
+                    <button type="submit" class="search-form__button btn-reset" aria-label="Найти миниатюру" ></button>
+
+
+                </div>
+            </form>
+            <section class="links-sec container">
+                <ul class="grid special-links-list">
+                    <li class="link-item">
+                        <a href="https://www.youtube.com/c/Trusty11" target="_blank" class="link"></a>
+                    </li>
+                    <li class="link-item">
+                        <a href="https://t.me/TrustAfina" target="_blank" class="link"></a>
+                    </li>
+                    <li class="link-item">
+                        <a href="/search-page/search-page.html" class="link"></a>
+                    </li>
+                    <li class="link-item">
+                        <a href="/how.html" class="link"></a>
+                    </li>
+                    <li class="link-item link__long">
+                        <a href="/search-page/search-page.html" class="link"></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="collage-container collage-container--first">
+                <h1 class="collage-header-main">Лучшие подборки Фигурок</h1>
+                <ul class="grid collage-list">
+                    <h2 class="collage-header-first">Anime</h2>
+                    <li class="collage-item collage-item--1 collage__long collage-lines">
+                        <a href="/products/html/seiko-ayase-dandadan.html" target="_blank">
+                            <img src="/media/collage/seiko.jpg" class="collage" alt="Сэйко Аясэ — Дандадан">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/frieren-figurine-cloth-potion.html" target="_blank">
+                            <img src="/media/collage/frieren.jpg" class="collage" alt="Фрирен — Провожающая в последний путь Фрирен">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/maki-jujutsu-kaisen-figurine.html" target="_blank">
+                            <img src="/media/collage/maki.jpg" class="collage" alt="Маки — Магическая битва">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/makima-chainsaw-man-figurine.html" target="_blank">
+                            <img src="/media/collage/makima.jpg" class="collage" alt="Макима — Человек бензопила">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/chainsaw-man-power-figurine.html" target="_blank">
+                            <img src="/media/collage/power.jpg" class="collage" alt="Пауэр — человек бензопила">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/hatsune-miku-bunny-figurine.html" target="_blank">
+                            <img src="/media/collage/Miku.jpg" class="collage" alt="Хатсуне Мику">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/vi-from-arcane-figurines.html" target="_blank">
+                            <img src="/media/collage/Vi.jpg" class="collage" alt="Ви — Аркейн">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/albedo-overlord-fan-figurine.html" target="_blank">
+                            <img src="/media/collage/Albedo.jpg" class="collage" alt="Альбедо — Оверлорд">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/yor-forger-spy-favily-figure.html" target="_blank">
+                            <img src="/media/collage/yor.jpg" class="collage" alt="Йор Форджер — Семья шпиона">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="collage-container collage-container--second">
+
+                <ul class="grid collage-list collage-list-right">
+                    <h2 class="collage-header-second">Genshin</h2>
+                    <li class="collage-item">
+                        <a href="/products/html/hu-tao-genshin-figurine.html" target="_blank">
+                            <img src="/media/collage/Hu-tao.jpg" class="collage" alt="Ху Тао — Геншин Импакт">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/collei-genshin-impact-figurine.html" target="_blank">
+                            <img src="/media/collage/collei.jpg" class="collage" alt="Коллей — Геншин Импакт">
+                        </a>
+                    </li>
+                    <li class="collage-item collage__long">
+                        <a href="/products/html/candice-genshin-impact-figure.html" target="_blank">
+                            <img src="/media/collage/Screenshot_112.jpg" class="collage" alt="Кендис — Геншин Импакт">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/shenhe-genshin-impact-figure.html" target="_blank">
+                            <img src="/media/collage/shenhe.jpg" class="collage" alt="Шенхе — Геншин Импакт">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/dehya-genshin-figurine-standing.html" target="_blank">
+                            <img src="/media/collage/Screenshot_116.jpg" class="collage" alt="Дейа — Геншин Импакт">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/diona-genshin-figurine.html" target="_blank">
+                            <img src="/media/collage/Screenshot_117.jpg" class="collage" alt="Диона — Геншин Импакт">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/dori-genshin-figurine.html" target="_blank">
+                            <img src="/media/collage/Screenshot_118.jpg" class="collage" alt="Дори — Геншин Импакт">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/fischl-genshin-figurine.html" target="_blank">
+                            <img src="/media/collage/fischl.jpg" class="collage" alt="Фишль — Геншин Импакт">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/nilou-genshin-figurine.html" target="_blank">
+                            <img src="/media/collage/Screenshot_120.jpg" class="collage" alt="Нилоу — Геншин Импакт">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="collage-container collage-container--third">
+
+                <ul class="grid collage-list collage-list">
+                    <h2 class="collage-header-third">Games</h2>
+                    <li class="collage-item collage__long">
+                        <a href="/products/html/2b-nier-automata-figurine.html" target="_blank">
+                            <img src="/media/collage/2B.jpg" class="collage" alt="2B — Ниер Автомата">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/mario-figurine-boosete.html" target="_blank">
+                            <img src="/media/collage/boosette.jpg" class="collage" alt="Бусетте — Марио">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/bowsette-marion-figurine.html" target="_blank">
+                            <img src="/media/collage/bowsette.jpg" class="collage" alt="Bowsette — Super Mario">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/brier-lol-figurine.html" target="_blank">
+                            <img src="/media/collage/brier.jpg" class="collage" alt="Брайар — Лига Легенд">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/evelynn-league-of-legends-figure.html" target="_blank">
+                            <img src="/media/collage/evelynn.jpg" class="collage" alt="Эвелинн — Лига Легенд">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/widowmaker-overwatch-figure.html" target="_blank">
+                            <img src="/media/collage/widowmaker.jpg" class="collage" alt="Вдова — Овервотч">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/nicole-zzz-figurine.html" target="_blank">
+                            <img src="/media/collage/Screenshot_115.jpg" class="collage" alt="Николь — Zenless Zone Zero">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/evelyn-chavalier-genshin-figure.html" target="_blank">
+                            <img src="/media/collage/evelyn-chevalier.jpg" class="collage" alt="Эвелин — Геншин Импакт">
+                        </a>
+                    </li>
+                    <li class="collage-item">
+                        <a href="/products/html/burnice-zenless-zone-zero-figure.html" target="_blank">
+                            <img src="/media/collage/Screenshot_113.jpg" class="collage" alt="Бёрнис — Zenless Zone Zero">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!--<section class="news-container container">
+                <ul class="grid news-list">
+                    <li class="news-item news__huge">
+                        <a href="#" class="link ">1</a>
+                    </li>
+                    <li class="news-item news__horizontal">
+                        <a href="#" class="link">2</a>
+                    </li>
+                    <li class="news-item">
+                        <a href="#" class="link">3</a>
+                    </li>
+                    <li class="news-item news__vertical">
+                        <a href="#" class="link">4</a>
+                    </li>
+                </ul>
+            </section>-->
+        </main>
+    <div id="footer-placeholder"></div>
+    </div>
+    <script src="libs/swiper.min.js"></script>
+    <script src="main.js" defer></script>
+    <script src="js/search-filter.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,225 @@
+/* Заголовки */
+
+.collage-header-main {
+    text-align: center;
+    font-size: 44px;
+    margin: -40px;
+}
+
+.collage-header-first,
+.collage-header-second,
+.collage-header-third {
+    grid-column: span 3;
+    text-align: center;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.collage-header-first {
+    margin-top: 10px;
+    margin-right: 45%;
+}
+
+.collage-header-second {
+    margin-left: 45%;
+}
+
+.collage-header-third {
+    margin-right: 45%;
+}
+
+/* Псевдоэлементы для линий у заголовков */
+
+[class^="collage-header-"]::before,
+[class^="collage-header-"]::after {
+    content: "";
+    display: block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 2px;
+    margin: 20px;
+}
+
+[class^="collage-header-"]::before {
+    margin-left: 0%;
+    left: 0;
+}
+
+[class^="collage-header-"]::after {
+    margin-right: 0%;
+    right: 0;
+}
+
+.collage-header-first::before,
+.collage-header-first::after {
+    background-color: var(--color-bg-first-accent);
+}
+
+.collage-header-second::before,
+.collage-header-second::after {
+    background-color: var(--color-bg-second-accent);
+}
+
+.collage-header-third::before,
+.collage-header-third::after {
+    background-color: var(--color-bg-third-accent);
+}
+
+/* Контейнеры */
+
+.collage-container {
+    position: relative;
+    padding: 44px 30px;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1400px;
+    max-height: none;
+    border-top: 2px solid grey;
+}
+
+.collage-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.collage-container--first {
+    margin-top: 50px;
+}
+
+.collage-container--first::before {
+    background: linear-gradient(to bottom, var(--color-bg-first) 0%, var(--color-light-accent) 100%);
+}
+
+.collage-container--second::before {
+    background: linear-gradient(to bottom, var(--color-bg-second) 0%, var(--color-light-accent) 100%);
+}
+
+.collage-container--third::before {
+    background: linear-gradient(to bottom, var(--color-bg-third) 0%, var(--color-light-accent) 100%);
+}
+
+.collage-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom, rgba(249, 249, 249, 0) 0%, white 100%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.collage-container > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Списки */
+
+.collage-list {
+    display: grid;
+    grid-gap: 20px;
+    max-width: 70%;
+    min-width: 500px;
+
+    justify-self: center;
+    align-items: center;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+
+.collage-list-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
+/* Элементы списка */
+
+.collage-item {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background-color: gray;
+    overflow: hidden;
+    border: 5px solid white;
+    box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transform-origin: center;
+  }
+  
+  .collage-item:hover {
+    transform: scale(1.03); /* Увеличиваем изображение при наведении */
+  }
+  
+  .collage-item:hover {
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+/* Длинные элементы */
+
+.collage__long {
+    aspect-ratio: 9 / 16;
+    grid-row: span 4;
+    box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.collage__long:hover {
+    box-shadow: -12px 12px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Изображения */
+
+.collage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Линии Long */
+
+
+  .collage__long::before,
+  .collage__long::after {
+    content: "";
+  
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #fff;
+  
+    position: absolute;
+    z-index: 2;
+  
+    opacity: .3;
+    transition: .5s;
+    pointer-events: none; /* Псевдоэлементы не мешают кликам */
+  }
+  
+  .collage__long::before {
+    top: 2rem;
+    right: 2rem;
+  
+    border-bottom-width: 0;
+    border-left-width: 0;
+  }
+  
+  .collage__long::after {
+    bottom: 2rem;
+    left: 2rem;
+  
+    border-top-width: 0;
+    border-right-width: 0;
+  }
+
+  .collage-list:hover .collage__long::before,
+  .collage-list:hover .collage__long::after {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+  }

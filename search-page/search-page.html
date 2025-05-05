@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск — TrustyMiniatures</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP&family=Orbitron:wght@500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/_reset.css">
+  <link rel="stylesheet" href="/css/_normalize.css">
+  <link rel="stylesheet" href="/css/_variables.css">
+  <link rel="stylesheet" href="/css/_global.css">
+  <link rel="stylesheet" href="/css/_fonts.css">
+  <link rel="stylesheet" href="/css/_overall.css">
+  <link rel="stylesheet" href="/search-page/components/search-page.css">
+  <link rel="stylesheet" href="/css/_nsfwblur.css">
+  <link rel="stylesheet" href="/css/components/_search.css">
+  <link rel="stylesheet" href="/css/components/header.css">
+  <link rel="stylesheet" href="/css/components/_footer.css">
+
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main class="search-page">
+    <div class="search-page-background"></div>
+    <form class="search__bar__container  container">
+      <div class="search__bar">
+        <input 
+          class="search-form__field" 
+          name="search" 
+          placeholder="Поиск товаров..."
+          type="text" 
+          id="search-input">
+      </div>
+
+      <div class="filters-panel">
+    
+        <div class="filter-category">
+          <h4>Популярное</h4>
+          <div class="filter-checkboxes" data-category="popular"></div>
+          
+        </div>
+
+        <div class="filter-category">
+          <h4>Аниме / Манга</h4>
+          <div class="filter-checkboxes" data-category="anime"></div>
+
+        </div>
+        
+        <div class="filter-category">
+          <h4>Игры</h4>
+          <div class="filter-checkboxes" data-category="games"></div>
+
+        </div>
+
+        
+        <div class="filter-category">
+          <h4>Прочее</h4>
+          <div class="filter-checkboxes" data-category="other"></div>
+
+        </div>
+
+        <div class="filter-category">
+          <h4>Цена (₽)</h4>
+          <div class="manual-range-inputs">
+            <label>
+              От:
+              <input type="number" id="price-min-input" min="0" max="20000" step="100" value="0">
+            </label>
+            <label>
+              До:
+              <input type="number" id="price-max-input" min="0" max="20000" step="100" value="20000">
+            </label>
+          </div>
+        </div>
+        <div class="filter-category">
+          <h4>Высота (см)</h4>
+          <div class="manual-range-inputs">
+            <label>
+              От:
+              <input type="number" id="height-min-input" min="1" max="40" step="1" value="1">
+            </label>
+            <label>
+              До:
+              <input type="number" id="height-max-input" min="1" max="40" step="1" value="40">
+            </label>
+          </div>
+        </div>
+
+        <button type="button" id="apply-filters-btn" class="apply-filters-btn">Применить фильтры</button>
+
+      </div>
+    </form>
+
+    <section class="search-results">
+      <div class="product-card nsfw">
+      <div class="no-results-message">Ничего не найдено. Попробуйте применить другие фильтры</div>
+      <!-- Здесь будут рендериться результаты поиска -->
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="/main.js"></script>
+  <script src="/search-page/search-page.js"></script>
+</body>
+</html>

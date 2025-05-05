@@ -1,0 +1,234 @@
+.Logo {
+    font-size: 20px;
+    font-weight: 1000;
+    color: white;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social__link {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social__link--tg {
+    background-image: url(/media/social/Telegram_logo.svg);
+    width: 20px;
+    height: 20px;
+    
+}
+
+.social__link--yt {
+    background-image: url(/media/social/youtube-svgrepo-com.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.social__item {
+    width: 20px;
+    padding-left: auto ;
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 45px;
+    padding-left: 24%;
+    padding-right: 24%;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: none;
+    z-index: 1000;
+}
+
+.header__social {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+}
+
+.burger {
+    font-size: 20px;
+    font-weight: 1000;
+    color: white;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+.burger__line {
+    width: 40px;
+    height: 2px;
+    background-color: var(--white-color);
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger__line:nth-child(2) {
+    top: 9px;
+}
+
+.burger__line:nth-child(3) {
+    top: 18px;
+}
+
+.header__lower{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.header__buttons {
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: lowercase;
+    color: white;
+    height: 25px;
+    width: 100px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: center;
+}
+
+
+/* popup меню */
+.popup-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 20px;
+    transition: right 0.5s ease;
+}
+
+/* меню */
+.popup-menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: block;
+}
+
+.popup-menu__item {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(-20px); /* Начальная позиция сверху */
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Анимация для появления с движением вверх */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Начинаем с небольшого отступа сверху */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Пропадаем и возвращаемся на нормальную позицию */
+    }
+}
+
+
+.popup-menu__item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.popup-menu.open {
+    right: 0;
+}
+
+/* Применяем анимацию для пунктов меню только когда они появляются */
+.popup-menu.open .popup-menu__item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Стили для burger кнопки при открытии */
+.burger.open .burger__line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.burger.open .burger__line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open .burger__line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+body.popup-menu-open {
+    overflow: hidden; 
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+
+/* Стиль для чекбокса в меню */
+.popup-menu__item label {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.popup-menu__item input[type="checkbox"] {
+    cursor: pointer;
+    transform: scale(1.2);
+    margin-top: 4px;
+}
+
+/* Стили для переключателя, если требуется */
+#toggle-nsfw {
+    margin-left: 10px;
+}

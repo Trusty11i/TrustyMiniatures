@@ -1,0 +1,39 @@
+.search-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* можно адаптировать под твою вёрстку */
+    margin: 0 auto;
+  }
+  
+  .search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .suggestion-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestion-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 8px;
+  }
+  
+  .suggestion-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+  }
+  

@@ -1,0 +1,95 @@
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+
+}
+
+.links-sec {
+    margin-top: 20px;
+}
+
+.special-links-list {
+    grid-gap: 20px;
+    grid-auto-flow: column;
+
+    aspect-ratio: 6/2;
+    justify-self: center;
+    min-width: 1000px;
+    width: 100%;
+    max-width: 1400px;
+    grid-template-areas: 
+    "sh1 lo1 sh3"
+    "sh2 lo1 sh4";
+}
+
+@media (max-width: 1250px) {
+    .special-links-list {
+        aspect-ratio: 9/8;
+        grid-template-areas: 
+        "sh1 lo1"
+        "sh2 lo1"
+        "sh3 lo1"
+        "sh4 lo1";
+        grid-template-columns: 3fr 4fr;
+        width: 90%;
+        min-width: 500px;
+        max-width: 830px;
+        max-height: 600px;
+    }
+    .link__long {
+        grid-row: span 4;
+      }
+}
+
+.link {
+    display: block;
+    width: 100%; /* или любое другое нужное вам значение */
+    height: 100%; /* или любое другое нужное вам значение */
+    background-size: contain; /* Для правильного отображения изображений */
+    background-repeat: no-repeat; /* Чтобы не повторять фоновое изображение */
+    background-position: center; /* Для центрирования изображения */
+}
+
+.link-item {
+    background-color: gray;
+}
+
+.link__long {
+    grid-row: span 2;
+  }
+
+  .link-item:nth-child(1) {
+    background-image: url(/media/special-links/YT\ copy.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: sh1;
+}
+
+.link-item:nth-child(2) {
+    background-image: url(/media/special-links/TG\ copy.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: sh2;
+}
+
+  .link-item:nth-child(5) {
+    background-image: url(/media/special-links/catalog\ copy.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: lo1;
+}
+
+.link-item:nth-child(3) {
+    background-image: url(/media/special-links/new\ copy.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: sh3;
+}
+
+.link-item:nth-child(4) {
+    background-image: url(/media/special-links/how\ its\ made\ copy.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: sh4;
+}

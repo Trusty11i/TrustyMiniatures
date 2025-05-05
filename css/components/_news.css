@@ -1,0 +1,36 @@
+.news-container {
+    margin-top: 50px;
+}
+
+.news-list {
+    grid-gap: 20px;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 500px;
+    width: 900px;
+    justify-self: center;
+}
+
+.news-item {
+    background-color: gray;
+}
+
+.news__vertical {
+    grid-row: span 2;
+}
+
+.news__huge {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.news__horizontal {
+    grid-column: span 2;
+}
+
+
+.news-item:nth-child(3) {
+    background-image: url(/media/special-links/catalog\ copy.jpg);
+    background-size: cover;
+    background-position: center;
+}
