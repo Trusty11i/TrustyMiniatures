@@ -17,8 +17,8 @@
   
 
 .product-page__left {
+  max-width: 550px;
   min-width: 281px;
-  max-width: fit-content;
   position: sticky;
   top: 80px;
   align-self: flex-start;
@@ -26,7 +26,7 @@
 }
   
 .product-main-image {
-  width: 20vw;
+  width: 30vw;
   min-width: 281px;
   object-fit: cover;
   border-radius: 8px;
@@ -190,6 +190,10 @@
     position: static;
     justify-self: center;
   }
+  .product-main-image {
+    width: auto;
+    max-width: 100%;
+  }
   .product-page__content {
     display: grid;
   }
@@ -221,7 +225,6 @@
     padding: 0;
   }
   .product-gallery {
-
     align-self: center;
     margin-left: 20px;
     flex-wrap: wrap;
