@@ -42,6 +42,25 @@
       }
 }
 
+@media (max-width: 650px) {
+    .special-links-list {
+        aspect-ratio: 9/8;
+        grid-template-areas: 
+        "sh1 lo1"
+        "sh2 lo1"
+        "sh3 lo1"
+        "sh4 lo1";
+        grid-template-columns: 3fr 4fr;
+        width: 95%;
+        min-width: 374px;
+        max-width: 600px;
+        gap: 8px;
+    }
+    .link__long {
+        grid-row: span 4;
+      }
+}
+
 .link {
     display: block;
     width: 100%; /* или любое другое нужное вам значение */

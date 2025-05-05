@@ -21,8 +21,8 @@
     overflow: hidden;
     background-color: gray;
     border-radius: 10px;
-    height: 50vh;
-    width: calc(50vh / 16 * 9);
+    height: 45vh;
+    width: calc(45vh / 16 * 9);
     min-height: 350px;
     max-height: 650px;
     min-width: 200px;
@@ -75,4 +75,16 @@
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 650px) {
+    .swiper-slide {
+        height: 25vh;
+        width: calc(25vh / 16 * 9);
+    }
+    .swiper-wrapper {
+    gap: -100px;
+    }
+
 }

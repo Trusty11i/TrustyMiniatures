@@ -10,7 +10,7 @@
     background-color: rgba(0, 0, 0, 50%);
     border-radius: 15px;
     width: 50%;
-    min-width: 350px;
+    min-width: 250px;
     max-width: 880px;
     height: 54px;
     margin: auto;
@@ -98,4 +98,11 @@ filter: brightness(0) invert(0.5);
 
 .price-values span {
     font-weight: bold;
+}
+
+
+@media (max-width: 650px) {
+    .search__bar{
+        font-size: 14px;
+    }
 }

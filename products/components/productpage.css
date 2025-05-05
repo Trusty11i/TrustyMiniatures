@@ -2,6 +2,7 @@
 .product-page {
   padding: 80px 20px;
   max-width: none;
+  min-width: 700px;
 }
 
 /* Контент товара */
@@ -161,6 +162,7 @@
   background-color: rgba(0, 0, 0, .2);
   gap: 16px;
   justify-content: center;
+  max-width: 90%;
 }
 
 .product-similar-item {
@@ -234,6 +236,27 @@
   .product-description{
     grid-area: desc;
   }
+  .product-similar-item {
+    max-width: 175px;
+  }
+  .product-similar{
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-similar-item {
+    min-width: 100px;
+    max-width: 125px;
+  }
+  .product-page__left{
+    min-width: none;
+    width: 80%;
+  }
+  .product-main-image{
+    min-width: none;
+  }
+
 }
 
 

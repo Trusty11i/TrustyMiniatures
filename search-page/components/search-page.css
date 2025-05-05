@@ -217,3 +217,114 @@ input[type="checkbox"] {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+
+@media (max-width: 880px) {
+  .container{
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .filters-panel{
+    padding-right: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  .filter-category h4 {
+    padding: 6px 10px;
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  .filter-category label {
+    font-size: 16px;
+  }
+  input[type="checkbox"] {
+    width: 16px;    /* ширина чекбокса */
+    height: 16px;   /* высота чекбокса */
+    margin-top: 2px;
+    margin-right: 3px;
+  }
+  .manual-range-inputs {
+    display: flex;
+    gap: 14px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    padding-bottom: 6px;
+  }
+  
+  .manual-range-inputs label {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 12px;
+    align-items: center;
+  
+  }
+  
+  .manual-range-inputs input[type="number"] {
+    padding: 4px 6px;
+    font-size: 12px;
+    width: 75px;
+    height: 30px;
+  }
+  .search-results {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  .product-card {
+    padding: 0;
+  }
+  .product-card h4{
+    font-size: 16px;
+  }
+  .product-card p{
+    font-size: 14px;
+  }
+  }
+
+  @media (max-width: 600px) {
+    .filter-category h4 {
+      padding: 5px 8px;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    .filter-category label {
+      font-size: 12px;
+    }
+    input[type="checkbox"] {
+      width: 12px;    /* ширина чекбокса */
+      height: 12px;   /* высота чекбокса */
+      margin-top: 2px;
+      margin-right: 2px;
+    }
+    .manual-range-inputs {
+      display: flex;
+      gap: 14px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+      padding-bottom: 6px;
+    }
+    
+    .manual-range-inputs label {
+      display: flex;
+      flex-direction: row;
+      font-weight: bold;
+      font-size: 10px;
+      align-items: center;
+    
+    }
+    .manual-range-inputs input[type="number"] {
+      padding: 4px 6px;
+      font-size: 10px;
+      width: 50px;
+      height: 20px;
+    }
+    .search-results {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 10px;
+    }
+    .product-card h4{
+      font-size: 12px;
+    }
+    .product-card p{
+      font-size: 10px;
+    }
+    }

@@ -128,7 +128,7 @@
     display: grid;
     grid-gap: 20px;
     max-width: 70%;
-    min-width: 500px;
+    min-width: 350px;
 
     justify-self: center;
     align-items: center;
@@ -223,3 +223,22 @@
     width: calc(100% - 4rem);
     height: calc(100% - 4rem);
   }
+
+  @media (max-width: 650px) {
+    .collage-container{
+        padding: 12px 0px;
+    }
+    .collage-header-main{
+        font-size: 24px;
+    }
+    .collage-header-first, .collage-header-second,
+    .collage-header-third{
+        font-size: 24px;
+    }
+    .collage-item{
+        border: 3px solid white;
+    }
+    .collage-container::after {
+        background: linear-gradient(to bottom, rgba(249, 249, 249, 0) 50%, white 100%);
+    }
+}
