@@ -12,13 +12,15 @@
     width: 50%;
     min-width: 250px;
     max-width: 880px;
-    height: 54px;
+    height: 46px;
     margin: auto;
     display: flex;
     align-items: center;
+    text-align: center;
     padding-left: 15px;
     padding-right: 15px;
     position: relative;
+    font-size: 12px;
 }
 
 .search-form__field {
@@ -100,9 +102,15 @@ filter: brightness(0) invert(0.5);
     font-weight: bold;
 }
 
+@media (max-width: 960px) {
+    .search__bar{
+        height: 38px;
+    }
+}
+
 
 @media (max-width: 650px) {
     .search__bar{
-        font-size: 14px;
+        height: 32px;
     }
 }
