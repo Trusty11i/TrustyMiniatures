@@ -60,14 +60,14 @@
   }
 
   .link-item:nth-child(1) {
-    background-image: url(/media/special-links/YT\ copy.jpg);
+    background-image: url(/media/special-links/yt\ copy.jpg);
     background-size: cover;
     background-position: center;
     grid-area: sh1;
 }
 
 .link-item:nth-child(2) {
-    background-image: url(/media/special-links/TG\ copy.jpg);
+    background-image: url(/media/special-links/tg\ copy.jpg);
     background-size: cover;
     background-position: center;
     grid-area: sh2;
