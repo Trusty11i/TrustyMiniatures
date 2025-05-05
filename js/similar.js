@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     const checkOverflow = () => {
                         const containerWidth = section.offsetWidth;
                         const itemWidth = section.querySelector('.product-similar-item').offsetWidth;
-                        const itemsPerRow = Math.floor(containerWidth / (itemWidth + 10));
+                        const itemsPerRow = Math.floor(containerWidth / (itemWidth + 20));
 
                         // Если элементов больше, чем можно разместить в одной строке
                         const items = section.querySelectorAll('.product-similar-item');
