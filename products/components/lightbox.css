@@ -1,0 +1,44 @@
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbox__img {
+    user-select: none;
+    pointer-events: none;
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+  
+  .lightbox__close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .lightbox__prev,
+  .lightbox__next {
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .lightbox__prev { left: 30px; }
+  .lightbox__next { right: 30px; }
