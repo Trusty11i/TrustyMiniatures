@@ -1,36 +1,24 @@
 .slider-container {
-    padding-top: 45px;
+    padding-top: 80px;
     overflow: hidden;
-    height: 95%;
+    max-height: 90%;
     position: relative;
 }
 
 .swiper-wrapper {
-    display: flex;
-    height: 100%;
-    align-items: center;
 }
 
 .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    transition: transform 0.5s ease;
+    width: fit-content;
+    aspect-ratio: 9 / 16;
     transform: scale(0.8);
-    overflow: hidden;
-    background-color: gray;
-    border-radius: 10px;
-    height: 45vh;
-    width: calc(45vh / 16 * 9);
-    min-height: 350px;
-    max-height: 650px;
-    min-width: 200px;
-    max-width: 375px;
+    transition: transform 0.5s ease;
 }
 
 .swiper-slide img {
     cursor: pointer; /* Чтобы показать, что на изображение можно кликнуть */
+    height: 100%;
+    border-radius: 6px;
   }
 
 .swiper-slide-active {
@@ -50,12 +38,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
     transition: background-color 0.3s ease;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+.swiper-button-prev::after{
+    margin-right: 16px;
+}
+
+.swiper-button-next::after{
+    margin-left: 8px;
 }
 
 .swiper-button-next {
@@ -77,24 +78,14 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.swiper-pagination-bullets {
+    margin-bottom: -2.5%;
+}
+
 @media (max-width: 1080px) {
-    .swiper-slide {
-        height: 32vh;
-        width: calc(32vh / 16 * 9);
-    }
-    .swiper-wrapper {
-    gap: -10px;
-    }
 
 }
 
 @media (max-width: 650px) {
-    .swiper-slide {
-        height: 25vh;
-        width: calc(25vh / 16 * 9);
-    }
-    .swiper-wrapper {
-    gap: -100px;
-    }
 
 }
