@@ -33,6 +33,12 @@
     }
 }
 
+@media (max-width: 1080px) {
+    .first{
+        height: 450px;
+    }
+}
+
 @media (max-width: 650px) {
     .first{
         height: 300px;

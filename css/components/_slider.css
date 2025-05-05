@@ -77,6 +77,16 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 1080px) {
+    .swiper-slide {
+        height: 32vh;
+        width: calc(32vh / 16 * 9);
+    }
+    .swiper-wrapper {
+    gap: -10px;
+    }
+
+}
 
 @media (max-width: 650px) {
     .swiper-slide {
