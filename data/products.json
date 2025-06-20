@@ -1831,5 +1831,70 @@
     "tags": ["cartoon", "nsfw"],
     "image": "/media/product/preview/screenshot_134.jpg",
     "url": "/products/html/lola-bunny-nsfw-maid-costume.html"
+  },
+  {
+    "id": "135",
+    "availability": "В Наличии",
+    "origin": "Frieren: Beyond Journey's End",
+    "studio": "Nomnom Figures",
+    "name": "Custom keycap — Frieren",
+    "ru-name": "Кейкап на клавиатуру — Фрирен",
+    "price": 845,
+    "height": 3,
+    "tags": ["anime", "keycap", "frieren"],
+    "image": "/media/product/preview/screenshot_135.jpg",
+    "url": "/products/html/frieren-custom-keycaps-keyboard.html"
+  },
+  {
+    "id": "136",
+    "availability": "В Наличии",
+    "origin": "Spy X Family",
+    "studio": "Nomnom Figures",
+    "name": "Anya spy x family",
+    "ru-name": "Аня Семья Шпионов",
+    "price": 845,
+    "height": 3,
+    "tags": ["anime", "keycap"],
+    "image": "/media/product/preview/screenshot_136.jpg",
+    "url": "/products/html/anya-spy-family-keycap-custom.html"
+  },
+  {
+    "id": "137",
+    "availability": "В Наличии",
+    "origin": "The apothecary diaries",
+    "studio": "Nomnom Figures",
+    "name": "Maomao - The apothecary diaries",
+    "ru-name": "Маомао - Монолог фармацевта",
+    "price": 845,
+    "height": 3,
+    "tags": ["anime", "keycap"],
+    "image": "/media/product/preview/screenshot_137.jpg",
+    "url": "/products/html/maomao-apothecary-diaries-keycap-custom.html"
+  },
+  {
+    "id": "138",
+    "availability": "В Наличии",
+    "origin": "Cyberpunk Edgerunners",
+    "studio": "Nomnom Figures",
+    "name": "Lucy keycap - cyberpunk",
+    "ru-name": "Люси Кейкап - киберпанк",
+    "price": 650,
+    "height": 3,
+    "tags": ["anime", "keycap", "cyberpunk"],
+    "image": "/media/product/preview/screenshot_138.jpg",
+    "url": "/products/html/lucy-keycap-cyberpunk-edgerunners.html"
+  },
+  {
+    "id": "139",
+    "availability": "В Наличии",
+    "origin": "Chainsaw-man",
+    "studio": "?",
+    "name": "Pochita Keycap",
+    "ru-name": "Почита Кейкап",
+    "price": 525,
+    "height": 3,
+    "tags": ["anime", "keycap"],
+    "image": "/media/product/preview/screenshot_139.jpg",
+    "url": "/products/html/pochita-chainsaw-man-keycap-custom.html"
   }
   ]
