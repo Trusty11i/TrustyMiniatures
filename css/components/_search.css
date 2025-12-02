@@ -53,54 +53,9 @@ input::placeholder {
 
 
 .search-form__button:hover {
-filter: brightness(0) invert(0.5);
+filter: brightness(0) invert(0.1);
 }
 
-/* Кнопка "Фильтры" */
-.filters-btn {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 14px;
-    padding: 4px 10px;
-    border-radius: 10px;
-    border: 1px solid transparent;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    right: 15px; 
-    margin-left: 20px;
-}
-
-.filters-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-/* Кнопки внутри модального окна */
-.apply-filters-btn, .close-filters-btn {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 14px;
-    padding: 8px 15px;
-    border-radius: 10px;
-    width: 100%;
-    cursor: pointer;
-    margin-top: 10px;
-    border: none;
-}
-
-.apply-filters-btn:hover, .close-filters-btn:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.price-values {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-}
-
-.price-values span {
-    font-weight: bold;
-}
 
 @media (max-width: 960px) {
     .search__bar{

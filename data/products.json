@@ -1191,7 +1191,7 @@
     "ru-name": "Doom",
     "price": 9725,
     "height": 35,
-    "tags": ["games", "brutal"],
+    "tags": ["games", "brutal", "man"],
     "image": "/media/product/preview/screenshot_86.jpg",
     "url": "/products/html/doom-figure-painted.html"
   },
@@ -1269,7 +1269,7 @@
     "ru-name": "Виктор - Аркейн",
     "price": 4175,
     "height": 30,
-    "tags": ["инвалид", "arcane", "anime", "league of legends"],
+    "tags": ["инвалид", "arcane", "anime", "league of legends", "man"],
     "image": "/media/product/preview/screenshot_92.jpg",
     "url": "/products/html/victor-arcane-h3llcreator-figure.html"
   },

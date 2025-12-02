@@ -13,15 +13,16 @@
   <link rel="stylesheet" href="/css/_global.css">
   <link rel="stylesheet" href="/css/_fonts.css">
   <link rel="stylesheet" href="/css/_overall.css">
+    <link rel="stylesheet" href="/css/components/_search.css">
   <link rel="stylesheet" href="/search-page/components/search-page.css">
   <link rel="stylesheet" href="/css/_nsfwblur.css">
-  <link rel="stylesheet" href="/css/components/_search.css">
   <link rel="stylesheet" href="/css/components/header.css">
   <link rel="stylesheet" href="/css/components/_footer.css">
 
 </head>
 <body>
   <div id="header-placeholder"></div>
+  <button id="filters-toggle" class="filters-btn" aria-label="Открыть фильтры">Фильтры</button>
 
   <main class="search-page">
     <div class="search-page-background"></div>
@@ -35,63 +36,47 @@
           id="search-input">
       </div>
 
-      <div class="filters-panel">
-    
-        <div class="filter-category">
-          <h4>Популярное</h4>
-          <div class="filter-checkboxes" data-category="popular"></div>
-          
-        </div>
+      <aside id="filters-panel" class="filters-panel" aria-hidden="false">
 
-        <div class="filter-category">
-          <h4>Аниме / Манга</h4>
-          <div class="filter-checkboxes" data-category="anime"></div>
+        <div class="filters-content">
+          <fieldset class="filter-block">
+            <legend>Персонажи</legend>
+            <label><input type="checkbox" name="gender" value="female" class="filter-control"> Женские персонажи</label>
+            <label><input type="checkbox" name="gender" value="male" class="filter-control"> Мужские персонажи</label>
+            <label><input type="checkbox" name="adult" value="adult" class="filter-control"> 18+</label>
+          </fieldset>
 
-        </div>
-        
-        <div class="filter-category">
-          <h4>Игры</h4>
-          <div class="filter-checkboxes" data-category="games"></div>
+          <fieldset class="filter-block">
+            <legend>Категории</legend>
+            <label><input type="checkbox" name="category" value="anime" class="filter-control"> Аниме / Манга</label>
+            <label><input type="checkbox" name="category" value="games" class="filter-control"> Игры</label>
+          </fieldset>
 
-        </div>
+          <fieldset class="filter-block">
+            <legend>Цена (₽)</legend>
+            <div class="price-row">
+              <input type="number" id="price-min" min="0" placeholder="От" class="price-input">
+              <span class="dash">—</span>
+              <input type="number" id="price-max" min="0" placeholder="До" class="price-input">
+            </div>
+          </fieldset>
 
-        
-        <div class="filter-category">
-          <h4>Прочее</h4>
-          <div class="filter-checkboxes" data-category="other"></div>
+          <fieldset class="filter-block">
+            <legend>Высота (см)</legend>
+            <label><input type="radio" name="height" value="lt10" class="filter-control"> &lt; 10</label>
+            <label><input type="radio" name="height" value="10-20" class="filter-control"> 10–20</label>
+            <label><input type="radio" name="height" value="20-30" class="filter-control"> 20–30</label>
+            <label><input type="radio" name="height" value="gt30" class="filter-control"> &gt; 30</label>
+            <label><input type="radio" name="height" value="" class="filter-control" checked> Любая</label>
+          </fieldset>
+          <div id="product-count" class="product-count"></div>
 
-        </div>
-
-        <div class="filter-category">
-          <h4>Цена (₽)</h4>
-          <div class="manual-range-inputs">
-            <label>
-              От:
-              <input type="number" id="price-min-input" min="0" max="20000" step="100" value="0">
-            </label>
-            <label>
-              До:
-              <input type="number" id="price-max-input" min="0" max="20000" step="100" value="20000">
-            </label>
+          <div class="filters-actions">
+            <button id="apply-filters-btn" class="apply-btn">Применить</button>
+            <button id="reset-filters-btn" class="reset-btn">Сбросить</button>
           </div>
         </div>
-        <div class="filter-category">
-          <h4>Высота (см)</h4>
-          <div class="manual-range-inputs">
-            <label>
-              От:
-              <input type="number" id="height-min-input" min="1" max="40" step="1" value="1">
-            </label>
-            <label>
-              До:
-              <input type="number" id="height-max-input" min="1" max="40" step="1" value="40">
-            </label>
-          </div>
-        </div>
-
-        <button type="button" id="apply-filters-btn" class="apply-filters-btn">Применить фильтры</button>
-
-      </div>
+      </aside>
     </form>
 
     <section class="search-results">

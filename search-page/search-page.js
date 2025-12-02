@@ -1,224 +1,156 @@
-function getFilterValues() {
-  return {
-    selectedTags: Array.from(document.querySelectorAll('.filter-checkboxes input:checked')).map(cb => cb.value),
-    priceMin: parseInt(document.getElementById('price-min-input')?.value, 10) || 0,
-    priceMax: parseInt(document.getElementById('price-max-input')?.value, 10) || Infinity,
-    heightMin: parseInt(document.getElementById('height-min-input')?.value, 10) || 0,
-    heightMax: parseInt(document.getElementById('height-max-input')?.value, 10) || Infinity,
-  };
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const filtersPanel = document.getElementById('filters-panel');
+  const filtersToggle = document.querySelector('.filters-btn');
+  const filtersClose = null;
+  const applyBtn = document.getElementById('apply-filters-btn');
+  const resetBtn = document.getElementById('reset-filters-btn');
+  const searchInput = document.getElementById('search-input');
+  const productsContainer = document.querySelector('.search-results');
+  const bodyEl = document.body;
 
-// 2. Применение фильтров и поиска
-function applyFilters(query = '') {
-  const { selectedTags, priceMin, priceMax, heightMin, heightMax } = getFilterValues();
-  const lowerQuery = query.toLowerCase();
-
-  const filtered = products.filter(p => {
-    const name = p.name?.toLowerCase() || '';
-    const ruName = p['ru-name']?.toLowerCase() || '';
-    const tags = p.tags || [];
-
-    const matchesQuery = [name, ruName, ...tags.map(t => t.toLowerCase()), ...tags.map(t => tagLabels[t]?.toLowerCase() || '')]
-      .some(field => field.includes(lowerQuery));
-
-    const matchesTags = selectedTags.length === 0 || selectedTags.every(tag => tags.includes(tag));
-    const matchesPrice = p.price >= priceMin && p.price <= priceMax;
-    const matchesHeight = p.height >= heightMin && p.height <= heightMax;
-
-    return matchesQuery && matchesTags && matchesPrice && matchesHeight;
-  });
-
-  renderProducts(filtered);
-}
-
-// 3. NSFW логика
-function applyNSFWBlur() {
-  const { showNSFW = false } = JSON.parse(localStorage.getItem('profileSettings')) || {};
-  document.querySelectorAll('.product-card.nsfw img').forEach(img => {
-    img.classList.toggle('blurred', !showNSFW);
-  });
-}
-
-function handleNSFWClick(event) {
-  const card = event.currentTarget;
-  if (card.classList.contains('nsfw')) {
-    if (!confirm("Подтвердите, что вам есть 18 лет для просмотра данного товара.")) {
-      event.preventDefault();
-    }
-  }
-}
-
-document.getElementById('toggle-nsfw')?.addEventListener('click', () => {
-  const settings = JSON.parse(localStorage.getItem('profileSettings')) || {};
-  settings.showNSFW = !settings.showNSFW;
-  localStorage.setItem('profileSettings', JSON.stringify(settings));
-  applyNSFWBlur();
-});
-
-// 4. Рендер товаров
-function renderProducts(items) {
-  const container = document.querySelector('.search-results');
-  if (!container) return;
-
-  container.innerHTML = '';
-
-  document.querySelector('.no-results-message')?.remove();
-
-  if (items.length === 0) {
-    const msg = document.createElement('div');
-    msg.classList.add('no-results-message');
-    msg.textContent = 'Ничего не найдено. Попробуйте применить другие фильтры';
-    container.appendChild(msg);
-    return;
-  }
-
-  items.forEach(product => {
-    const card = document.createElement('div');
-    card.classList.add('product-card');
-    if (product.tags?.includes('nsfw')) card.classList.add('nsfw');
-
-    const link = document.createElement('a');
-    link.href = product.url;
-    link.classList.add('product-card__link');
-
-    const img = document.createElement('img');
-    img.src = product.image;
-    img.alt = product.name;
-
-    const title = document.createElement('h4');
-    title.textContent = product.name;
-
-    const price = document.createElement('p');
-    price.textContent = `${product.price} ₽`;
-
-    link.append(img, title, price);
-    card.appendChild(link);
-    card.addEventListener('click', handleNSFWClick);
-    container.appendChild(card);
-  });
-
-  applyNSFWBlur();
-}
-
-// 5. Глобальные данные и загрузка
-let products = [];
-
-fetch('/data/products.json')
-  .then(res => res.json())
-  .then(data => {
-    products = data;
-    renderProducts(products);
-    generateFilters(products);
-    checkURLSearchQuery();
-  })
-  .catch(err => console.error('Ошибка при загрузке данных:', err));
-
-// 6. Метки тегов
-const tagLabels = {
-  'anime': 'Аниме', 
-  'jujutsu kaisen': 'Магическая Битва',
-  'chainsaw man': 'Человек Бензопила',
-  'konosuba': 'KonoSuba',
-  'frieren': 'Провожающая в последний путь Фрирен',
-  'dandadan': 'Dandadan',
-  'ngnl': 'No Game No Life',
-  'record of lodoss war': 'Record of Lodoss War',
-  'arcane': 'Arcane',
-  'games': 'Из Игр',
-  'genshin impact': 'Genshin Impact',
-  'league of legends': 'League of Legends',
-  'zzz': 'Zenless Zone Zero',
-  'nier automata': 'NieR: Automata',
-  'mario': 'Super Mario',
-  'honkai': 'Honkai',
-  'dmc': 'Devil May Cry',
-  'pokemon': 'Pokémon',
-  'overwatch': 'Overwatch',
-  'nsfw': 'NSFW (18+)',
-  'woman': 'Женские персонажи',
-  'man': 'Мужские персонажи',
-  'furry': 'Фурри',
-  'chibi': 'Чиби',
-  'vocaloid': 'Vocaloid / UTAU',
-  'demon': 'Демоны',
-  'music': 'Музыка',
-  'guns': 'Пушки',
-  'marvel': 'Марвел',
-  'creepy': 'Крипово',
-  'hololive': 'Hololive',
-  'versions': 'Несколько версий',
-  'vtuber': 'В-Тюберы',
-  'real': 'С реальными фото',
-};
-
-const hiddenTags = ['fungus', 'devil', 'samurai', 'seven deadly sins', 'hatsune miku', 'creepy', 'manga'];
-
-// 7. Генерация фильтров
-function generateFilters(data) {
-  const allTags = new Set(data.flatMap(p => p.tags));
-  const categorizedTags = {
-    anime: ['anime', 'manga', 'jujutsu kaisen', 'chainsaw man', 'konosuba', 'frieren', 'dandadan', 'ngnl', 'record of lodoss war', 'arcane'],
-    games: ['games', 'genshin impact', 'league of legends', 'zzz', 'nier automata', 'mario', 'honkai', 'dmc', 'pokemon', 'overwatch'],
-    popular: ['nsfw', 'woman', 'man', 'furry', 'real'],
-    other: []
+  let products = [];
+  const mapCategory = {
+    gender: { female:['woman'], male:['man'] },
+    adult: { adult:['nsfw'] },
+    category: { anime:['anime','manga'], games:['games'] }
   };
 
-  allTags.forEach(tag => {
-    if (hiddenTags.includes(tag)) return;
-    if (!Object.values(categorizedTags).some(cat => cat.includes(tag))) {
-      categorizedTags.other.push(tag);
-    }
-  });
+  const tagLabels = { 'nsfw':'18+', 'woman':'Женские персонажи','man':'Мужские персонажи','anime':'Аниме','games':'Игры'};
 
-  Object.entries(categorizedTags).forEach(([category, tags]) => {
-    const container = document.querySelector(`.filter-checkboxes[data-category="${category}"]`);
-    if (!container) return;
-
-    const filteredTags = tags.filter(tag => !hiddenTags.includes(tag));
-    const [visibleTags, extraTags] = [filteredTags.slice(0, 6), filteredTags.slice(6)];
-
-    visibleTags.sort().forEach(tag => {
-      container.insertAdjacentHTML('beforeend', `<label><input type="checkbox" value="${tag}"> ${tagLabels[tag] || tag}</label>`);
+  function applyNSFWBlur() {
+    const { showNSFW=false } = JSON.parse(localStorage.getItem('profileSettings'))||{};
+    document.querySelectorAll('.product-card.nsfw img').forEach(img=>{
+      img.classList.toggle('blurred',!showNSFW);
     });
+  }
 
-    if (extraTags.length > 0) {
-      const hiddenDiv = document.createElement('div');
-      hiddenDiv.classList.add('hidden-tags');
-      hiddenDiv.style.display = 'none';
-      extraTags.sort().forEach(tag => {
-        hiddenDiv.innerHTML += `<label><input type="checkbox" value="${tag}"> ${tagLabels[tag] || tag}</label>`;
-      });
-      container.appendChild(hiddenDiv);
+  function handleNSFWClick(e) {
+    const card = e.currentTarget;
+    if(card.classList.contains('nsfw')) {
+      if(!confirm("Подтвердите, что вам есть 18 лет.")) e.preventDefault();
+    }
+  }
 
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.classList.add('show-more-btn');
-      btn.textContent = 'Показать все';
-      btn.onclick = () => {
-        hiddenDiv.style.display = hiddenDiv.style.display === 'none' ? 'block' : 'none';
-        btn.textContent = hiddenDiv.style.display === 'none' ? 'Показать все' : 'Скрыть';
-      };
-      container.appendChild(btn);
+  function readSelectedFilters() {
+    const genders = Array.from(document.querySelectorAll('input[name="gender"]:checked')).map(i=>i.value);
+    const adults = Array.from(document.querySelectorAll('input[name="adult"]:checked')).map(i=>i.value);
+    const categories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(i=>i.value);
+    const height = (document.querySelector('input[name="height"]:checked')||{}).value||'';
+    const priceMin = parseInt(document.getElementById('price-min')?.value,10)||0;
+    const priceMaxRaw = document.getElementById('price-max')?.value;
+    const priceMax = priceMaxRaw===''||priceMaxRaw==null?Infinity:parseInt(priceMaxRaw,10);
+    return {genders,adults,categories,height,priceMin,priceMax};
+  }
+
+  function heightToRange(value){
+    switch(value){
+      case 'lt10': return {min:0,max:9.999};
+      case '10-20': return {min:10,max:20};
+      case '20-30': return {min:20,max:30};
+      case 'gt30': return {min:30.001,max:Infinity};
+      default: return {min:0,max:Infinity};
+    }
+  }
+
+  function applyFilters(query=''){
+    const q=(query||searchInput.value||'').toLowerCase().trim();
+    const sel=readSelectedFilters();
+    const heightRange=heightToRange(sel.height);
+
+    const filtered = products.filter(p=>{
+      const name=(p.name||'').toLowerCase();
+      const ruName=(p['ru-name']||'').toLowerCase();
+      const tags=(p.tags||[]).map(t=>String(t).toLowerCase());
+      const matchesQuery = !q || [name, ruName, ...tags, ...tags.map(t => tagLabels[t] || '')]
+        .some(field => String(field || '').toLowerCase().includes(q));
+      if(!matchesQuery) return false;
+      if(typeof p.price==='number'){if(p.price<sel.priceMin||p.price>sel.priceMax)return false;}
+      const h=parseFloat(p.height||0); if(h<heightRange.min||h>heightRange.max)return false;
+      if(sel.genders.length){if(!sel.genders.some(g=>(mapCategory.gender[g]||[]).some(t=>tags.includes(t))))return false;}
+      if(sel.adults.length){if(!sel.adults.some(a=>(mapCategory.adult[a]||[]).some(t=>tags.includes(t))))return false;}
+      if(sel.categories.length){if(!sel.categories.some(c=>(mapCategory.category[c]||[]).some(t=>tags.includes(t))))return false;}
+      return true;
+    });
+    renderProducts(filtered);
+  }
+
+  function updateProductCount(count){
+    const box=document.getElementById("product-count");
+    if(!box) return;
+    box.textContent=count?`Показано товаров: ${count}`:'Ничего не найдено';
+  }
+
+  function renderProducts(items){
+    productsContainer.innerHTML='';
+    updateProductCount(items.length);
+    if(items.length===0){
+      const msg=document.createElement('div');
+      msg.className='no-results-message';
+      msg.textContent='Ничего не найдено.';
+      productsContainer.appendChild(msg);
+      return;
+    }
+    items.forEach(product=>{
+      const card=document.createElement('div');
+      card.className='product-card';
+      if((product.tags||[]).map(t=>String(t).toLowerCase()).includes('nsfw'))card.classList.add('nsfw');
+      const link=document.createElement('a'); link.href=product.url||'#'; link.className='product-card__link';
+      const img=document.createElement('img'); img.src=product.image||''; img.alt=product.name||'';
+      const title=document.createElement('h4'); title.textContent=product.name||product['ru-name']||'—';
+      const price=document.createElement('p'); price.textContent=product.price?`${product.price} ₽`:'';
+      link.append(img,title,price); card.appendChild(link); card.addEventListener('click',handleNSFWClick);
+      productsContainer.appendChild(card);
+    });
+    applyNSFWBlur();
+  }
+
+  function resetFilters(){
+    document.querySelectorAll('#filters-panel input[type="checkbox"]').forEach(i=>i.checked=false);
+    document.querySelectorAll('#filters-panel input[type="radio"]').forEach(i=>i.value===''?i.checked=true:i.checked=false);
+    document.getElementById('price-min').value='';
+    document.getElementById('price-max').value='';
+    applyFilters();
+  }
+
+  // события
+ // События для кнопок панели фильтров
+filtersToggle?.addEventListener('click', () => {
+  // переключаем видимость панели
+  filtersPanel.classList.toggle('show');
+  bodyEl.classList.toggle('filters-open');
+  filtersPanel.setAttribute('aria-hidden', !filtersPanel.classList.contains('show'));
+});
+
+applyBtn?.addEventListener('click', e => {
+  e.preventDefault();
+  applyFilters();
+  // на мобильных скрываем панель после применения
+  if (window.innerWidth <= 650) {
+    filtersPanel.classList.remove('show');
+    bodyEl.classList.remove('filters-open');
+    filtersPanel.setAttribute('aria-hidden', 'true');
+  }
+});
+
+resetBtn?.addEventListener('click', e => {
+  e.preventDefault();
+  resetFilters();
+});
+
+  searchInput?.addEventListener('input',e=>applyFilters(e.target.value));
+  document.querySelectorAll('#filters-panel input.filter-control, #filters-panel input.price-input').forEach(el=>{el.addEventListener('input',()=>applyFilters()); el.addEventListener('change',()=>applyFilters());});
+
+  // клик вне панели на мобилке
+  document.addEventListener('click',e=>{
+    if(window.innerWidth<=650&&!filtersPanel.classList.contains('hidden')&&!filtersPanel.contains(e.target)&&!filtersToggle.contains(e.target)){
+      filtersPanel.classList.add('hidden'); bodyEl.classList.remove('filters-open'); filtersPanel.setAttribute('aria-hidden','true');
     }
   });
-}
 
-// 8. Слушатели поиска и кнопки "Применить фильтры"
-document.getElementById('apply-filters-btn')?.addEventListener('click', () => {
-  const query = document.getElementById('search-input')?.value || '';
-  applyFilters(query);
+  // загрузка товаров
+  fetch('/data/products.json')
+    .then(res=>res.json())
+    .then(data=>{products=data||[]; renderProducts(products); const q=new URLSearchParams(window.location.search).get('search')||''; if(q){searchInput.value=decodeURIComponent(q); applyFilters(q);}})
+    .catch(err=>{console.error(err); productsContainer.innerHTML='<div class="no-results-message">Ошибка загрузки данных.</div>';});
+
 });
-
-document.getElementById('search-input')?.addEventListener('input', (e) => {
-  applyFilters(e.target.value);
-});
-
-// 9. Поиск из URL
-function checkURLSearchQuery() {
-  const query = new URLSearchParams(window.location.search).get('search');
-  if (query) {
-    const input = document.getElementById('search-input');
-    if (input) input.value = decodeURIComponent(query);
-    applyFilters(query);
-  }
-}

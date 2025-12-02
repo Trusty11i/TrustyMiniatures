@@ -5,16 +5,19 @@
     position: relative;
 }
 
+.swipper-wrapper {
+    display: flex;
+}
+
 
 .swiper-slide {
-    width: fit-content;
-    aspect-ratio: 9 / 16;
+    width: auto;
+    aspect-ratio: 4 / 3;
     transform: scale(0.8);
-    transition: transform 0.5s ease;
+    transition: transform 0.4s ease;
 }
 
 .swiper-slide img {
-    cursor: pointer; /* Чтобы показать, что на изображение можно кликнуть */
     height: 100%;
     border-radius: 6px;
   }
@@ -23,19 +26,22 @@
     transform: scale(1);
   }
 
-.swiper-slide:hover {
-    transform: scale(0.98);
-  }
-
+.swiper-slide-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 4px;
+    border-radius: 5px;
+    cursor: default;
+}
   
 .swiper-button-next, .swiper-button-prev {
     top: 55%;
-    position: absolute;
-    z-index: 10;
     cursor: pointer;
-    display: flex;
     align-items: center;
-    justify-content: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -77,7 +83,9 @@
 }
 
 .swiper-pagination-bullets {
-    top: 50px;
+    top: 45px;
+    margin-top: 5px;
+    height: fit-content;
 }
 
 @media (max-width: 1080px) {
