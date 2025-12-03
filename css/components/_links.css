@@ -79,35 +79,35 @@
   }
 
   .link-item:nth-child(1) {
-    background-image: url(/media/special-links/yt\ copy.jpg);
+    background-image: url(/media/special-links/yt\ copy.avif);
     background-size: cover;
     background-position: center;
     grid-area: sh1;
 }
 
 .link-item:nth-child(2) {
-    background-image: url(/media/special-links/tg\ copy.jpg);
+    background-image: url(/media/special-links/tg\ copy.avif);
     background-size: cover;
     background-position: center;
     grid-area: sh2;
 }
 
   .link-item:nth-child(5) {
-    background-image: url(/media/special-links/catalog\ copy.jpg);
+    background-image: url(/media/special-links/catalog\ copy.avif);
     background-size: cover;
     background-position: center;
     grid-area: lo1;
 }
 
 .link-item:nth-child(3) {
-    background-image: url(/media/special-links/new\ copy.jpg);
+    background-image: url(/media/special-links/new\ copy.avif);
     background-size: cover;
     background-position: center;
     grid-area: sh3;
 }
 
 .link-item:nth-child(4) {
-    background-image: url(/media/special-links/how\ its\ made\ copy.jpg);
+    background-image: url(/media/special-links/how\ its\ made\ copy.avif);
     background-size: cover;
     background-position: center;
     grid-area: sh4;

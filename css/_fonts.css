@@ -1,8 +1,8 @@
 @font-face {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    src: url(../fonts/font-name.wolf2) format('wolf2'),
-        url(../fonts/font-name.wolf) format('wolf');
+    src: url(../fonts/ImpactLTStd.woff2) format('woff2'),
+        url(../fonts/ImpactLTStd.woff) format('woff');
     font-display: swap;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
 }

@@ -196,7 +196,7 @@
 .manual-range-inputs label {
   display: flex;
   flex-direction: row;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 14px;
   align-items: center;
 
@@ -271,6 +271,13 @@
   margin: 10px 0 5px;
   font-size: 18px;
   font-weight: 300;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.product-card p {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: var(--font-heading);
 }
 
 .no-results-message {
@@ -337,7 +344,7 @@
   .manual-range-inputs label {
     display: flex;
     flex-direction: row;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 12px;
     align-items: center;
   
@@ -383,7 +390,7 @@
     .manual-range-inputs label {
       display: flex;
       flex-direction: row;
-      font-weight: bold;
+      font-weight: 600;
       font-size: 10px;
       align-items: center;
     

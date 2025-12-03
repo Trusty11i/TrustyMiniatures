@@ -9,7 +9,7 @@
     "price": 5450,
     "height": 25,
     "tags": ["league of legends", "games", "woman"],
-    "image": "/media/product/preview/screenshot_1.jpg",
+    "image": "/media/product/preview/screenshot_1.avif",
     "url": "/products/html/brier-lol-figurine.html"
   },
   {
@@ -22,7 +22,7 @@
     "price": 9600,
     "height": 30,
     "tags": ["marvel", "woman", "games"],
-    "image": "/media/product/preview/screenshot_2.jpg",
+    "image": "/media/product/preview/screenshot_2.avif",
     "url": "/products/html/malice-invisible-woman.html"
   },
   {
@@ -35,7 +35,7 @@
     "price": 4175,
     "height": 30,
     "tags": ["woman", "games", "nier automata","versions"],
-    "image": "/media/product/preview/screenshot_3.jpg",
+    "image": "/media/product/preview/screenshot_3.avif",
     "url": "/products/html/2b-nier-automata-figurine.html"
   },
   {
@@ -48,7 +48,7 @@
     "price": 7365,
     "height": 30,
     "tags": ["woman", "anime", "dandadan", "versions"],
-    "image": "/media/product/preview/screenshot_4.jpg",
+    "image": "/media/product/preview/screenshot_4.avif",
     "url": "/products/html/seiko-ayase-dandadan.html"
   },
   {
@@ -61,7 +61,7 @@
     "price": 9575,
     "height": 30,
     "tags": ["woman", "anime", "dandadan", "versions","nsfw"],
-    "image": "/media/product/preview/screenshot_4-1.jpg",
+    "image": "/media/product/preview/screenshot_4-1.avif",
     "url": "/products/html/seiko-ayase-dandadan-nsfw.html"
   },
   {
@@ -74,7 +74,7 @@
     "price": 7365,
     "height": 32,
     "tags": ["woman", "anime", "chainsaw man", "real"],
-    "image": "/media/product/preview/screenshot_5.jpg",
+    "image": "/media/product/preview/screenshot_5.avif",
     "url": "/products/html/makima-chainsaw-man-figurine.html"
   },
   {
@@ -87,7 +87,7 @@
     "price": 4175,
     "height": 30,
     "tags": ["woman", "anime", "jujutsu kaisen", "versions"],
-    "image": "/media/product/preview/screenshot_6.jpg",
+    "image": "/media/product/preview/screenshot_6.avif",
     "url": "/products/html/maki-jujutsu-kaisen-figurine.html"
   },
   {
@@ -100,7 +100,7 @@
     "price": 5425,
     "height": 30,
     "tags": ["woman", "anime", "jujutsu kaisen", "nsfw", "versions"],
-    "image": "/media/product/preview/screenshot_6-1.jpg",
+    "image": "/media/product/preview/screenshot_6-1.avif",
     "url": "/products/html/maki-jujutsu-kaisen-figurine-nsfw.html"
   },
   {
@@ -113,7 +113,7 @@
     "price": 5425,
     "height": 25,
     "tags": ["nsfw", "woman", "furry","versions"],
-    "image": "/media/product/preview/screenshot_7.jpg",
+    "image": "/media/product/preview/screenshot_7.avif",
     "url": "/products/html/furry-figurine-angela-nsfw.html"
   },
   {
@@ -126,7 +126,7 @@
     "price": 5465,
     "height": 30,
     "tags": ["league of legends", "woman", "games","bunny"],
-    "image": "/media/product/preview/screenshot_8.jpg",
+    "image": "/media/product/preview/screenshot_8.avif",
     "url": "/products/html/aurora-lol-figurine.html"
   },
   {
@@ -139,7 +139,7 @@
     "price": 9625,
     "height": 30,
     "tags": ["woman", "guns", "games"],
-    "image": "/media/product/preview/screenshot_9.jpg",
+    "image": "/media/product/preview/screenshot_9.avif",
     "url": "/products/html/figurine-alice-nikke.html"
   },
   {
@@ -152,7 +152,7 @@
     "price": 3215,
     "height": 30,
     "tags": ["seven deadly sins", "woman", "anime","versions"],
-    "image": "/media/product/preview/screenshot_10.jpg",
+    "image": "/media/product/preview/screenshot_10.avif",
     "url": "/products/html/azerama-diane-figurine.html"
   },
   {
@@ -165,7 +165,7 @@
     "price": 4200,
     "height": 30,
     "tags": ["seven deadly sins", "woman", "anime","nsfw","versions"],
-    "image": "/media/product/preview/screenshot_10-1.jpg",
+    "image": "/media/product/preview/screenshot_10-1.avif",
     "url": "/products/html/azerama-diane-figurine-nsfw.html"
   },
   {
@@ -178,7 +178,7 @@
     "price": 2100,
     "height": 20,
     "tags": ["woman", "konosuba", "anime"],
-    "image": "/media/product/preview/screenshot_11.jpg",
+    "image": "/media/product/preview/screenshot_11.avif",
     "url": "/products/html/megumin-figurine-konosuba.html"
   },
   {
@@ -191,7 +191,7 @@
     "price": 7000,
     "height": 25,
     "tags": ["woman", "nsfw", "fungus","real"],
-    "image": "/media/product/preview/screenshot_12.jpg",
+    "image": "/media/product/preview/screenshot_12.avif",
     "url": "/products/html/fungus-girl-nsfw-figurine.html"
   },
   {
@@ -204,7 +204,7 @@
     "price": 7000,
     "height": 25,
     "tags": ["woman", "nsfw", "fungus","real"],
-    "image": "/media/product/preview/screenshot_13.jpg",
+    "image": "/media/product/preview/screenshot_13.avif",
     "url": "/products/html/fungus-girl-nsfw-figurine-2.html"
   },
   {
@@ -217,7 +217,7 @@
     "price": 2715,
     "height": 15,
     "tags": ["chibi", "woman", "games", "mario"],
-    "image": "/media/product/preview/screenshot_14.jpg",
+    "image": "/media/product/preview/screenshot_14.avif",
     "url": "/products/html/mario-figurine-boosete.html"
   },
   {
@@ -230,7 +230,7 @@
     "price": 9625,
     "height": 30,
     "tags": ["woman", "games", "league of legends"],
-    "image": "/media/product/preview/screenshot_15.jpg",
+    "image": "/media/product/preview/screenshot_15.avif",
     "url": "/products/html/ahri-figurine-lol.html"
   },
   {
@@ -243,7 +243,7 @@
     "price": 3225,
     "height": 30,
     "tags": ["woman", "guns", "music"],
-    "image": "/media/product/preview/screenshot_16.jpg",
+    "image": "/media/product/preview/screenshot_16.avif",
     "url": "/products/html/ado-figurine-usseewa.html"
   },
   {
@@ -256,7 +256,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["woman", "games", "zzz"],
-    "image": "/media/product/preview/screenshot_17.jpg",
+    "image": "/media/product/preview/screenshot_17.avif",
     "url": "/products/html/nicole-zzz-figurine.html"
   },
   {
@@ -269,7 +269,7 @@
     "price": 9625,
     "height": 30,
     "tags": ["woman", "creepy"],
-    "image": "/media/product/preview/screenshot_18.jpg",
+    "image": "/media/product/preview/screenshot_18.avif",
     "url": "/products/html/alice-in-wonderland-figurine.html"
   },
   {
@@ -282,7 +282,7 @@
     "price": 5475,
     "height": 25,
     "tags": ["frieren", "woman", "anime"],
-    "image": "/media/product/preview/screenshot_19.jpg",
+    "image": "/media/product/preview/screenshot_19.avif",
     "url": "/products/html/frieren-figurine-cloth-potion.html"
   },
   {
@@ -295,7 +295,7 @@
     "price": 9675,
     "height": 25,
     "tags": ["woman","games","furry"],
-    "image": "/media/product/preview/screenshot_20.jpg",
+    "image": "/media/product/preview/screenshot_20.avif",
     "url": "/products/html/kumoko-spider-figurine.html"
   },
   {
@@ -308,7 +308,7 @@
     "price": 5475,
     "height": 25,
     "tags": ["league of legends","arcane","woman","anime","games"],
-    "image": "/media/product/preview/screenshot_21.jpg",
+    "image": "/media/product/preview/screenshot_21.avif",
     "url": "/products/html/vi-from-arcane-figurines.html"
   },
   {
@@ -321,7 +321,7 @@
     "price": 7375,
     "height": 25,
     "tags": ["games","woman","league of legends"],
-    "image": "/media/product/preview/screenshot_22.jpg",
+    "image": "/media/product/preview/screenshot_22.avif",
     "url": "/products/html/kai-sa-lol-figurine.html"
   },
   {
@@ -334,7 +334,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["anime","woman","games","league of legends"],
-    "image": "/media/product/preview/screenshot_23.jpg",
+    "image": "/media/product/preview/screenshot_23.avif",
     "url": "/products/html/arcane-vi-figurine.html"
   },
   {
@@ -347,7 +347,7 @@
     "price": 9650,
     "height": 30,
     "tags": ["woman","games","arcane","league of legends","anime"],
-    "image": "/media/product/preview/screenshot_24.jpg",
+    "image": "/media/product/preview/screenshot_24.avif",
     "url": "/products/html/arcane-jinx-figurine.html"
   },
   {
@@ -360,7 +360,7 @@
     "price": 9650,
     "height": 30,
     "tags": ["woman","samurai","devil"],
-    "image": "/media/product/preview/screenshot_25.jpg",
+    "image": "/media/product/preview/screenshot_25.avif",
     "url": "/products/html/oni-japanese-demon.html"
   },
   {
@@ -373,7 +373,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["anime","woman","chainsaw man"],
-    "image": "/media/product/preview/screenshot_26.jpg",
+    "image": "/media/product/preview/screenshot_26.avif",
     "url": "/products/html/chainsaw-man-power-figurine.html"
   },
   {
@@ -386,7 +386,7 @@
     "price": 5475,
     "height": 25,
     "tags": ["league of legends","woman","anime","arcane","games"],
-    "image": "/media/product/preview/screenshot_27.jpg",
+    "image": "/media/product/preview/screenshot_27.avif",
     "url": "/products/html/caitlyn-arcane-figurine.html"
   },
   {
@@ -399,7 +399,7 @@
     "price": 99999,
     "height": 25,
     "tags": ["games", "woman"],
-    "image": "/media/product/preview/screenshot_28.jpg",
+    "image": "/media/product/preview/screenshot_28.avif",
     "url": "/products/html/surtr-arknights-figurine.html"
   },
   {
@@ -412,7 +412,7 @@
     "price": 7375,
     "height": 25,
     "tags": ["games", "woman", "genshin impact"],
-    "image": "/media/product/preview/screenshot_29.jpg",
+    "image": "/media/product/preview/screenshot_29.avif",
     "url": "/products/html/dehya-genshin-impact-figurine.html"
   },
   {
@@ -425,7 +425,7 @@
     "price": 9675,
     "height": 30,
     "tags": ["woman"],
-    "image": "/media/product/preview/screenshot_30.jpg",
+    "image": "/media/product/preview/screenshot_30.avif",
     "url": "/products/html/code-red-hybris-figurine.html"
   },
   {
@@ -438,7 +438,7 @@
     "price": 9675,
     "height": 35,
     "tags": ["zzz", "games", "woman"],
-    "image": "/media/product/preview/screenshot_31.jpg",
+    "image": "/media/product/preview/screenshot_31.avif",
     "url": "/products/html/zzz-burnice-figurine.html"
   },
   {
@@ -451,7 +451,7 @@
     "price": 7375,
     "height": 25,
     "tags": ["woman", "versions", "games","versions"],
-    "image": "/media/product/preview/screenshot_32.jpg",
+    "image": "/media/product/preview/screenshot_32.avif",
     "url": "/products/html/ranni-elden-ring-fan-figurine.html"
   },
   {
@@ -464,7 +464,7 @@
     "price": 7400,
     "height": 25,
     "tags": ["woman", "versions", "games","nsfw","versions"],
-    "image": "/media/product/preview/screenshot_32.jpg",
+    "image": "/media/product/preview/screenshot_32.avif",
     "url": "/products/html/ranni-elden-ring-nsfw-figurine.html"
   },
   {
@@ -477,7 +477,7 @@
     "price": 2100,
     "height": 15,
     "tags": ["pokemon", "games"],
-    "image": "/media/product/preview/screenshot_33.jpg",
+    "image": "/media/product/preview/screenshot_33.avif",
     "url": "/products/html/charmander-pokeball-figurine.html"
   },
   {
@@ -490,7 +490,7 @@
     "price": 4175,
     "height": 25,
     "tags": ["anime", "woman", "frieren"],
-    "image": "/media/product/preview/screenshot_34.jpg",
+    "image": "/media/product/preview/screenshot_34.avif",
     "url": "/products/html/frieren-beyond-journey.html"
   },
   {
@@ -503,7 +503,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["marvel", "games", "woman"],
-    "image": "/media/product/preview/screenshot_35.jpg",
+    "image": "/media/product/preview/screenshot_35.avif",
     "url": "/products/html/susan-storm-marvel-rivals.html"
   },
   {
@@ -516,7 +516,7 @@
     "price": 4175,
     "height": 25,
     "tags": ["genshin impact", "games", "woman"],
-    "image": "/media/product/preview/screenshot_36.jpg",
+    "image": "/media/product/preview/screenshot_36.avif",
     "url": "/products/html/collei-genshin-impact-figurine.html"
   },
   {
@@ -529,7 +529,7 @@
     "price": 5475,
     "height": 25 ,
     "tags": ["genshin impact", "games", "woman"],
-    "image": "/media/product/preview/screenshot_37.jpg",
+    "image": "/media/product/preview/screenshot_37.avif",
     "url": "/products/html/dehya-genshin-figurine-standing.html"
   },
   {
@@ -542,7 +542,7 @@
     "price": 2750,
     "height": 20,
     "tags": ["games", "genshin impact", "woman"],
-    "image": "/media/product/preview/screenshot_38.jpg",
+    "image": "/media/product/preview/screenshot_38.avif",
     "url": "/products/html/diona-genshin-figurine.html"
   },
   {
@@ -555,7 +555,7 @@
     "price": 4175,
     "height": 20,
     "tags": ["games", "genshin impact", "woman"],
-    "image": "/media/product/preview/screenshot_39.jpg",
+    "image": "/media/product/preview/screenshot_39.avif",
     "url": "/products/html/dori-genshin-figurine.html"
   },
   {
@@ -568,7 +568,7 @@
     "price": 3215,
     "height": 20,
     "tags": ["games", "genshin impact", "woman"],
-    "image": "/media/product/preview/screenshot_40.jpg",
+    "image": "/media/product/preview/screenshot_40.avif",
     "url": "/products/html/fischl-genshin-figurine.html"
   },
   {
@@ -581,7 +581,7 @@
     "price": 4175,
     "height": 25,
     "tags": ["genshin impact", "games", "woman"],
-    "image": "/media/product/preview/screenshot_41.jpg",
+    "image": "/media/product/preview/screenshot_41.avif",
     "url": "/products/html/hu-tao-genshin-figurine.html"
   },
   {
@@ -594,7 +594,7 @@
     "price": 5475,
     "height": 25,
     "tags": ["games", "genshin impact", "woman"],
-    "image": "/media/product/preview/screenshot_42.jpg",
+    "image": "/media/product/preview/screenshot_42.avif",
     "url": "/products/html/nilou-genshin-figurine.html"
   },
   {
@@ -607,7 +607,7 @@
     "price": 3215,
     "height": 25,
     "tags": ["games", "woman"],
-    "image": "/media/product/preview/screenshot_43.jpg",
+    "image": "/media/product/preview/screenshot_43.avif",
     "url": "/products/html/mita-girl-figurine.html"
   },
   {
@@ -620,7 +620,7 @@
     "price": 5475,
     "height": 25,
     "tags": ["games", "woman", "anime", "arcane", "league of legends"],
-    "image": "/media/product/preview/screenshot_44.jpg",
+    "image": "/media/product/preview/screenshot_44.avif",
     "url": "/products/html/caitlyn-arcane-standing.html"
   },
   {
@@ -633,7 +633,7 @@
     "price": 7375,
     "height": 30,
     "tags": ["woman", "hatsune miku", "music"],
-    "image": "/media/product/preview/screenshot_45.jpg",
+    "image": "/media/product/preview/screenshot_45.avif",
     "url": "/products/html/hatsune-miku-dark-figurine.html"
   },
   {
@@ -646,7 +646,7 @@
     "price": 7375,
     "height": 25,
     "tags": ["woman"],
-    "image": "/media/product/preview/screenshot_46.jpg",
+    "image": "/media/product/preview/screenshot_46.avif",
     "url": "/products/html/skull-girl-figurine.html"
   },
   {
@@ -659,7 +659,7 @@
     "price": 4175,
     "height": 23,
     "tags": ["woman", "games", "mario"],
-    "image": "/media/product/preview/screenshot_47.jpg",
+    "image": "/media/product/preview/screenshot_47.avif",
     "url": "/products/html/bowsette-marion-figurine.html"
   },
   {
@@ -672,7 +672,7 @@
     "price": 7100,
     "height": 25,
     "tags": ["nsfw", "woman"],
-    "image": "/media/product/preview/screenshot_48.jpg",
+    "image": "/media/product/preview/screenshot_48.avif",
     "url": "/products/html/meru-the-succubus-figurine.html"
   },
   {
@@ -685,7 +685,7 @@
     "price": 5475,
     "height": 25,
     "tags": ["anime", "games", "league of legends", "arcane", "woman"],
-    "image": "/media/product/preview/screenshot_49.jpg",
+    "image": "/media/product/preview/screenshot_49.avif",
     "url": "/products/html/arcane-jinx-alternative.html"
   },
   {
@@ -698,7 +698,7 @@
     "price": 5475,
     "height": 25,
     "tags": ["games", "woman", "honkai"],
-    "image": "/media/product/preview/screenshot_50.jpg",
+    "image": "/media/product/preview/screenshot_50.avif",
     "url": "/products/html/kafka-honkai-figurines.html"
   },
   {
@@ -711,7 +711,7 @@
     "price": 7375,
     "height": 25,
     "tags": ["hololive", "woman", "vtuber","versions"],
-    "image": "/media/product/preview/screenshot_51.jpg",
+    "image": "/media/product/preview/screenshot_51.avif",
     "url": "/products/html/gawr-gura-fan-figurine.html"
   },
   {
@@ -724,7 +724,7 @@
     "price": 2715,
     "height": 17,
     "tags": ["woman","furry","cat"],
-    "image": "/media/product/preview/screenshot_52.jpg",
+    "image": "/media/product/preview/screenshot_52.avif",
     "url": "/products/html/catgirl-in-christmas-box.html"
   },
   {
@@ -737,7 +737,7 @@
     "price": 99999,
     "height": 30,
     "tags": ["zzz", "games", "woman"],
-    "image": "/media/product/preview/screenshot_53.jpg",
+    "image": "/media/product/preview/screenshot_53.avif",
     "url": "/products/html/hoshimi-miyabi-zzz-figurine.html"
   },
   {
@@ -750,7 +750,7 @@
     "price": 99999,
     "height": 25,
     "tags": ["zzz", "woman", "games"],
-    "image": "/media/product/preview/screenshot_54.jpg",
+    "image": "/media/product/preview/screenshot_54.avif",
     "url": "/products/html/burnice-zzz-figurine-flamethrower.html"
   },
   {
@@ -763,7 +763,7 @@
     "price": 5475,
     "height": 25,
     "tags": ["dmc", "games", "man"],
-    "image": "/media/product/preview/screenshot_55.jpg",
+    "image": "/media/product/preview/screenshot_55.avif",
     "url": "/products/html/dante-dmc5-figurine.html"
   },
   {
@@ -776,7 +776,7 @@
     "price": 5475,
     "height": 25,
     "tags": ["anime", "woman"],
-    "image": "/media/product/preview/screenshot_56.jpg",
+    "image": "/media/product/preview/screenshot_56.avif",
     "url": "/products/html/lady-devimob-figurine.html"
   },
   {
@@ -789,7 +789,7 @@
     "price": 5475,
     "height": 25,
     "tags": ["anime", "woman"],
-    "image": "/media/product/preview/screenshot_57.jpg",
+    "image": "/media/product/preview/screenshot_57.avif",
     "url": "/products/html/alita-battle-angel-figurine.html"
   },
   {
@@ -802,7 +802,7 @@
     "price": 5400,
     "height": 30,
     "tags": ["nier automata", "games", "woman", "nsfw"],
-    "image": "/media/product/preview/screenshot_58.jpg",
+    "image": "/media/product/preview/screenshot_58.avif",
     "url": "/products/html/2p-fanservice-figurine.html"
   },
   {
@@ -815,7 +815,7 @@
     "price": 9750,
     "height": 40,
     "tags": ["woman"],
-    "image": "/media/product/preview/screenshot_59.jpg",
+    "image": "/media/product/preview/screenshot_59.avif",
     "url": "/products/html/code-snow-girl-figurine.html"
   },
   {
@@ -828,7 +828,7 @@
     "price": 4200,
     "height": 20,
     "tags": ["pokemon", "games", "furry"],
-    "image": "/media/product/preview/screenshot_60.jpg",
+    "image": "/media/product/preview/screenshot_60.avif",
     "url": "/products/html/meowscarada-pokemon-figurine.html"
   },
   {
@@ -841,7 +841,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["ngnl", "anime", "woman"],
-    "image": "/media/product/preview/screenshot_61.jpg",
+    "image": "/media/product/preview/screenshot_61.avif",
     "url": "/products/html/ngnl-shiro-figurine.html"
   },
   {
@@ -854,7 +854,7 @@
     "price": 9700,
     "height": 40,
     "tags": ["dmc", "games", "woman"],
-    "image": "/media/product/preview/screenshot_62.jpg",
+    "image": "/media/product/preview/screenshot_62.avif",
     "url": "/products/html/trish-devil-may-cry-figurines.html"
   },
   {
@@ -867,7 +867,7 @@
     "price": 4175,
     "height": 30,
     "tags": ["league of legends", "woman", "games"],
-    "image": "/media/product/preview/screenshot_63.jpg",
+    "image": "/media/product/preview/screenshot_63.avif",
     "url": "/products/html/evelynn-league-of-legends-figure.html"
   },
   {
@@ -880,7 +880,7 @@
     "price": 5475,
     "height": 25,
     "tags": ["anime", "woman"],
-    "image": "/media/product/preview/screenshot_64.jpg",
+    "image": "/media/product/preview/screenshot_64.avif",
     "url": "/products/html/deedlit-record-of-lodoss-war.html"
   },
   {
@@ -893,7 +893,7 @@
     "price": 7400,
     "height": 30,
     "tags": ["zzz", "games", "woman"],
-    "image": "/media/product/preview/screenshot_65.jpg",
+    "image": "/media/product/preview/screenshot_65.avif",
     "url": "/products/html/burnice-zenless-zone-zero-figure.html"
   },
   {
@@ -906,7 +906,7 @@
     "price": 4200,
     "height": 30,
     "tags": ["games", "overwatch", "woman"],
-    "image": "/media/product/preview/screenshot_66.jpg",
+    "image": "/media/product/preview/screenshot_66.avif",
     "url": "/products/html/widowmaker-overwatch-figure.html"
   },
   {
@@ -919,7 +919,7 @@
     "price": 7375,
     "height": 30,
     "tags": ["anime", "bunny", "woman"],
-    "image": "/media/product/preview/screenshot_67.jpg",
+    "image": "/media/product/preview/screenshot_67.avif",
     "url": "/products/html/hatsune-miku-bunny-figurine.html"
   },
   {
@@ -932,7 +932,7 @@
     "price": 9625,
     "height": 35,
     "tags": ["anime", "overlord", "woman"],
-    "image": "/media/product/preview/screenshot_68.jpg",
+    "image": "/media/product/preview/screenshot_68.avif",
     "url": "/products/html/albedo-overlord-fan-figurine.html"
   },
   {
@@ -945,7 +945,7 @@
     "price": 7400,
     "height": 30,
     "tags": ["anime", "spyxfamily", "woman"],
-    "image": "/media/product/preview/screenshot_69.jpg",
+    "image": "/media/product/preview/screenshot_69.avif",
     "url": "/products/html/yor-forger-spy-favily-figure.html"
   },
   {
@@ -958,7 +958,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["anime", "genshin impact", "woman"],
-    "image": "/media/product/preview/screenshot_70.jpg",
+    "image": "/media/product/preview/screenshot_70.avif",
     "url": "/products/html/candice-genshin-impact-figure.html"
   },
   {
@@ -971,7 +971,7 @@
     "price": 5700,
     "height": 35,
     "tags": ["anime", "genshin impact", "woman", "versions"],
-    "image": "/media/product/preview/screenshot_71.jpg",
+    "image": "/media/product/preview/screenshot_71.avif",
     "url": "/products/html/shenhe-genshin-impact-figure.html"
   },
   {
@@ -984,7 +984,7 @@
     "price": 4200,
     "height": 30,
     "tags": ["anime", "genshin impact", "woman", "versions"],
-    "image": "/media/product/preview/screenshot_72.jpg",
+    "image": "/media/product/preview/screenshot_72.avif",
     "url": "/products/html/evelyn-chavalier-genshin-figure.html"
   },
   {
@@ -997,7 +997,7 @@
     "price": 5425,
     "height": 25,
     "tags": ["furry", "games","zelda"],
-    "image": "/media/product/preview/screenshot_73.jpg",
+    "image": "/media/product/preview/screenshot_73.avif",
     "url": "/products/html/zelda-furry-fanservice-figurine.html"
   },
   {
@@ -1010,7 +1010,7 @@
     "price": 4200,
     "height": 30,
     "tags": ["nsfw", "anime", "dragon ball"],
-    "image": "/media/product/preview/screenshot_74.jpg",
+    "image": "/media/product/preview/screenshot_74.avif",
     "url": "/products/html/launch-nsfw-dragon-ball-z-figure.html"
   },
   {
@@ -1023,7 +1023,7 @@
     "price": 4200,
     "height": 30,
     "tags": ["nsfw", "pokemon"],
-    "image": "/media/product/preview/screenshot_75.jpg",
+    "image": "/media/product/preview/screenshot_75.avif",
     "url": "/products/html/vaporeon-fanservice-nsfw-miniature.html"
   },
   {
@@ -1036,7 +1036,7 @@
     "price": 4200,
     "height": 30,
     "tags": ["arcane", "anime", "league of legends"],
-    "image": "/media/product/preview/screenshot_76.jpg",
+    "image": "/media/product/preview/screenshot_76.avif",
     "url": "/products/html/vi-arcane-lewd-dark-version-figurine.html"
   },
   {
@@ -1049,7 +1049,7 @@
     "price": 5500,
     "height": 23,
     "tags": ["genshin impact", "games"],
-    "image": "/media/product/preview/screenshot_77.jpg",
+    "image": "/media/product/preview/screenshot_77.avif",
     "url": "/products/html/citlani-genshin-figure.html"
   },
   {
@@ -1062,7 +1062,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["elden ring", "games"],
-    "image": "/media/product/preview/screenshot_78.jpg",
+    "image": "/media/product/preview/screenshot_78.avif",
     "url": "/products/html/let-me-solo-her-fan-made-figurine.html"
   },
   {
@@ -1075,7 +1075,7 @@
     "price": 7200,
     "height": 25,
     "tags": ["nsfw", "furry"],
-    "image": "/media/product/preview/screenshot_79.jpg",
+    "image": "/media/product/preview/screenshot_79.avif",
     "url": "/products/html/maid-marian-nsfw-fox-figure.html"
   },
   {
@@ -1088,7 +1088,7 @@
     "price": 7400,
     "height": 30,
     "tags": ["blue archive", "games"],
-    "image": "/media/product/preview/screenshot_80.jpg",
+    "image": "/media/product/preview/screenshot_80.avif",
     "url": "/products/html/takanashi-blue-archive-figurine.html"
   },
   {
@@ -1101,7 +1101,7 @@
     "price": 9575,
     "height": 30,
     "tags": ["nsfw","attack on titan", "anime"],
-    "image": "/media/product/preview/screenshot_81.jpg",
+    "image": "/media/product/preview/screenshot_81.avif",
     "url": "/products/html/mikasa-ackerman-nsfw-attack-on-titan.html"
   },
   {
@@ -1114,7 +1114,7 @@
     "price": 7375,
     "height": 30,
     "tags": ["attack on titan", "anime"],
-    "image": "/media/product/preview/screenshot_81-1.jpg",
+    "image": "/media/product/preview/screenshot_81-1.avif",
     "url": "/products/html/mikasa-ackerman-figurine-attack-on-titan.html"
   },
   {
@@ -1127,7 +1127,7 @@
     "price": 4175,
     "height": 30,
     "tags": ["anime"],
-    "image": "/media/product/preview/screenshot_82.jpg",
+    "image": "/media/product/preview/screenshot_82.avif",
     "url": "/products/html/scissor-seven-thirteen-azerama-figurine.html"
   },
   {
@@ -1140,7 +1140,7 @@
     "price": 5425,
     "height": 30,
     "tags": ["anime", "nsfw"],
-    "image": "/media/product/preview/screenshot_82-1.jpg",
+    "image": "/media/product/preview/screenshot_82-1.avif",
     "url": "/products/html/scissor-seven-thirteen-nsfw-figurine.html"
   },
   {
@@ -1153,7 +1153,7 @@
     "price": 9625,
     "height": 30,
     "tags": ["warhammer", "games", "brutal"],
-    "image": "/media/product/preview/screenshot_83.jpg",
+    "image": "/media/product/preview/screenshot_83.avif",
     "url": "/products/html/galactic-soldier-warhammer-bulkamancer.html"
   },
   {
@@ -1166,7 +1166,7 @@
     "price": 9625,
     "height": 25,
     "tags": ["league of legends", "games"],
-    "image": "/media/product/preview/screenshot_84.jpg",
+    "image": "/media/product/preview/screenshot_84.avif",
     "url": "/products/html/officer-vi-league-of-legends-bulkamancer.html"
   },
   {
@@ -1179,7 +1179,7 @@
     "price": 7375,
     "height": 30,
     "tags": ["solo leveling", "anime"],
-    "image": "/media/product/preview/screenshot_85.jpg",
+    "image": "/media/product/preview/screenshot_85.avif",
     "url": "/products/html/sung-jin-solo-leveling-figurine.html"
   },
   {
@@ -1192,7 +1192,7 @@
     "price": 9725,
     "height": 35,
     "tags": ["games", "brutal", "man"],
-    "image": "/media/product/preview/screenshot_86.jpg",
+    "image": "/media/product/preview/screenshot_86.avif",
     "url": "/products/html/doom-figure-painted.html"
   },
   {
@@ -1205,7 +1205,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["games", "marvel"],
-    "image": "/media/product/preview/screenshot_87.jpg",
+    "image": "/media/product/preview/screenshot_87.avif",
     "url": "/products/html/luna-snow-marvel-rivals-figure.html"
   },
   {
@@ -1218,7 +1218,7 @@
     "price": 4175,
     "height": 20,
     "tags": ["anime", "chibi", "dandadan"],
-    "image": "/media/product/preview/screenshot_88.jpg",
+    "image": "/media/product/preview/screenshot_88.avif",
     "url": "/products/html/turbo-granny-cat-chibi-figurine-dandadan.html"
   },
   {
@@ -1231,7 +1231,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["games", "honkai"],
-    "image": "/media/product/preview/screenshot_89.jpg",
+    "image": "/media/product/preview/screenshot_89.avif",
     "url": "/products/html/kafka-honkai-star-rail-figure.html"
   },
   {
@@ -1244,7 +1244,7 @@
     "price": 4175,
     "height": 30,
     "tags": ["games"],
-    "image": "/media/product/preview/screenshot_90.jpg",
+    "image": "/media/product/preview/screenshot_90.avif",
     "url": "/products/html/gwenpool-fanmade-figurine.html"
   },
   {
@@ -1257,7 +1257,7 @@
     "price": 4175,
     "height": 30,
     "tags": ["games", "marvel"],
-    "image": "/media/product/preview/screenshot_91.jpg",
+    "image": "/media/product/preview/screenshot_91.avif",
     "url": "/products/html/invisible-woman-marvel-rivals-figure.html"
   },
   {
@@ -1270,7 +1270,7 @@
     "price": 4175,
     "height": 30,
     "tags": ["инвалид", "arcane", "anime", "league of legends", "man"],
-    "image": "/media/product/preview/screenshot_92.jpg",
+    "image": "/media/product/preview/screenshot_92.avif",
     "url": "/products/html/victor-arcane-h3llcreator-figure.html"
   },
   {
@@ -1283,7 +1283,7 @@
     "price": 4175,
     "height": 30,
     "tags": ["games", "stellar blade"],
-    "image": "/media/product/preview/screenshot_93.jpg",
+    "image": "/media/product/preview/screenshot_93.avif",
     "url": "/products/html/stellar-blade-figurine.html"
   },
   {
@@ -1296,7 +1296,7 @@
     "price": 5425,
     "height": 30,
     "tags": ["anime", "dandadan"],
-    "image": "/media/product/preview/screenshot_94.jpg",
+    "image": "/media/product/preview/screenshot_94.avif",
     "url": "/products/html/seiko-ayase-kugo-figures.html"
   },
   {
@@ -1309,7 +1309,7 @@
     "price": 7475,
     "height": 30,
     "tags": ["marvel", "games"],
-    "image": "/media/product/preview/screenshot_95.jpg",
+    "image": "/media/product/preview/screenshot_95.avif",
     "url": "/products/html/loona-snow-marvel-rivals-figure.html"
   },
   {
@@ -1322,7 +1322,7 @@
     "price": 7375,
     "height": 25,
     "tags": ["arknights", "games", "anime"],
-    "image": "/media/product/preview/screenshot_96.jpg",
+    "image": "/media/product/preview/screenshot_96.avif",
     "url": "/products/html/nian-arknights-figurine.html"
   },
   {
@@ -1335,7 +1335,7 @@
     "price": 9725,
     "height": 30,
     "tags": ["anime", "games", "nier automata"],
-    "image": "/media/product/preview/screenshot_97.jpg",
+    "image": "/media/product/preview/screenshot_97.avif",
     "url": "/products/html/zero-drakengard-kuru-figure.html"
   },
   {
@@ -1348,7 +1348,7 @@
     "price": 2725,
     "height": 20,
     "tags": ["demon slayer", "anime", "chibi"],
-    "image": "/media/product/preview/screenshot_98.jpg",
+    "image": "/media/product/preview/screenshot_98.avif",
     "url": "/products/html/mitsuri-chibi-demon-slayer.html"
   },
   {
@@ -1361,7 +1361,7 @@
     "price": 4175,
     "height": 25,
     "tags": ["succubus"],
-    "image": "/media/product/preview/screenshot_99.jpg",
+    "image": "/media/product/preview/screenshot_99.avif",
     "url": "/products/html/arnes-succubus-figurine.html"
   },
   {
@@ -1374,7 +1374,7 @@
     "price": 7375,
     "height": 30,
     "tags": ["anime", "fate"],
-    "image": "/media/product/preview/screenshot_100.jpg",
+    "image": "/media/product/preview/screenshot_100.avif",
     "url": "/products/html/rin-tohsaka-fate-figurine.html"
   },
   {
@@ -1387,7 +1387,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["games", "zzz"],
-    "image": "/media/product/preview/screenshot_101.jpg",
+    "image": "/media/product/preview/screenshot_101.avif",
     "url": "/products/html/belle-zenless-zone-zero-figurine.html"
   },
   {
@@ -1400,7 +1400,7 @@
     "price": 3275,
     "height": 25,
     "tags": ["nier automata", "games"],
-    "image": "/media/product/preview/screenshot_102.jpg",
+    "image": "/media/product/preview/screenshot_102.avif",
     "url": "/products/html/nier-2b-listen-to-the-breath-of-life.html"
   },
   {
@@ -1413,7 +1413,7 @@
     "price": 7375,
     "height": 23,
     "tags": ["persona", "games", "anime"],
-    "image": "/media/product/preview/screenshot_103.jpg",
+    "image": "/media/product/preview/screenshot_103.avif",
     "url": "/products/html/ann-takamaki-persona-miniature.html"
   },
   {
@@ -1426,7 +1426,7 @@
     "price": 4175,
     "height": 25,
     "tags": ["anime"],
-    "image": "/media/product/preview/screenshot_104.jpg",
+    "image": "/media/product/preview/screenshot_104.avif",
     "url": "/products/html/casca-berserk-figurine.html"
   },
   {
@@ -1439,7 +1439,7 @@
     "price": 9675,
     "height": 30,
     "tags": ["cyberpunk", "anime"],
-    "image": "/media/product/preview/screenshot_105.jpg",
+    "image": "/media/product/preview/screenshot_105.avif",
     "url": "/products/html/rebecca-cyberpunk-edgerunners-lewd.html"
   },
   {
@@ -1452,7 +1452,7 @@
     "price": 4175,
     "height": 25,
     "tags": ["spider-man", "games"],
-    "image": "/media/product/preview/screenshot_106.jpg",
+    "image": "/media/product/preview/screenshot_106.avif",
     "url": "/products/html/black-cat-venom-spider-man.html"
   },
   {
@@ -1465,7 +1465,7 @@
     "price": 5425,
     "height": 30,
     "tags": ["nsfw", "furry"],
-    "image": "/media/product/preview/screenshot_107.jpg",
+    "image": "/media/product/preview/screenshot_107.avif",
     "url": "/products/html/egyptian-cat-nsfw-pikky-prints.html"
   },
   {
@@ -1478,7 +1478,7 @@
     "price": 7375,
     "height": 30,
     "tags": ["hololive","vtuber"],
-    "image": "/media/product/preview/screenshot_108.jpg",
+    "image": "/media/product/preview/screenshot_108.avif",
     "url": "/products/html/nanashi-mumei-hololive-vtuber.html"
   },
   {
@@ -1491,7 +1491,7 @@
     "price": 12500,
     "height": 22,
     "tags": ["nsfw","anime", "onepunch man"],
-    "image": "/media/product/preview/screenshot_109.jpg",
+    "image": "/media/product/preview/screenshot_109.avif",
     "url": "/products/html/tatsumaki-one-punch-man-nsfw-figure.html"
   },
   {
@@ -1504,7 +1504,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["cartoon"],
-    "image": "/media/product/preview/screenshot_110.jpg",
+    "image": "/media/product/preview/screenshot_110.avif",
     "url": "/products/html/panty-stocking-anarchy-cartoon-figure.html"
   },
   {
@@ -1517,7 +1517,7 @@
     "price": 7100,
     "height": 25,
     "tags": ["nsfw","anime","frieren", "rabbit"],
-    "image": "/media/product/preview/screenshot_111.jpg",
+    "image": "/media/product/preview/screenshot_111.avif",
     "url": "/products/html/frieren-bunny-costume-nsfw-tresure-chest.html"
   },
   {
@@ -1530,7 +1530,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["date a live", "anime"],
-    "image": "/media/product/preview/screenshot_112.jpg",
+    "image": "/media/product/preview/screenshot_112.avif",
     "url": "/products/html/kurumi-tokisaki-date-a-live-figure.html"
   },
   {
@@ -1543,7 +1543,7 @@
     "price": 7100,
     "height": 30,
     "tags": ["nsfw"],
-    "image": "/media/product/preview/screenshot_113.jpg",
+    "image": "/media/product/preview/screenshot_113.avif",
     "url": "/products/html/panty-nsfw-figurine.html"
   },
   {
@@ -1556,7 +1556,7 @@
     "price": 325,
     "height": 30,
     "tags": ["games"],
-    "image": "/media/product/preview/screenshot_114.jpg",
+    "image": "/media/product/preview/screenshot_114.avif",
     "url": "/products/html/shantae-cartoon-character-figure.html"
   },
   {
@@ -1569,7 +1569,7 @@
     "price": 4175,
     "height": 25,
     "tags": ["fate", "anime"],
-    "image": "/media/product/preview/screenshot_115.jpg",
+    "image": "/media/product/preview/screenshot_115.avif",
     "url": "/products/html/rin-tohsaka-fate-figurine-fanmade.html"
   },
   {
@@ -1582,7 +1582,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["hololive", "anime", "vtuber"],
-    "image": "/media/product/preview/screenshot_116.jpg",
+    "image": "/media/product/preview/screenshot_116.avif",
     "url": "/products/html/gawr-gura-hololive-beach-version.html"
   },
   {
@@ -1595,7 +1595,7 @@
     "price": 4175,
     "height": 25,
     "tags": ["arknights", "games"],
-    "image": "/media/product/preview/screenshot_117.jpg",
+    "image": "/media/product/preview/screenshot_117.avif",
     "url": "/products/html/platinum-arknights-figurine.html"
   },
   {
@@ -1608,7 +1608,7 @@
     "price": 7100,
     "height": 30,
     "tags": ["games", "nsfw"],
-    "image": "/media/product/preview/screenshot_118.jpg",
+    "image": "/media/product/preview/screenshot_118.avif",
     "url": "/products/html/ninja-assasin-nsfw-figurine.html"
   },
   {
@@ -1621,7 +1621,7 @@
     "price": 7375,
     "height": 30,
     "tags": ["zzz", "games"],
-    "image": "/media/product/preview/screenshot_119.jpg",
+    "image": "/media/product/preview/screenshot_119.avif",
     "url": "/products/html/koleda-belobog-zzz-figurine.html"
   },
   {
@@ -1634,7 +1634,7 @@
     "price": 5475,
     "height": 30,
     "tags": ["bleach", "anime"],
-    "image": "/media/product/preview/screenshot_120.jpg",
+    "image": "/media/product/preview/screenshot_120.avif",
     "url": "/products/html/rukia-bleach-figurine.html"
   },
   {
@@ -1647,7 +1647,7 @@
     "price": 4175,
     "height": 30,
     "tags": ["games"],
-    "image": "/media/product/preview/screenshot_121.jpg",
+    "image": "/media/product/preview/screenshot_121.avif",
     "url": "/products/html/kula-diamond-the-king-of-fighters.html"
   },
   {
@@ -1660,7 +1660,7 @@
     "price": 7375,
     "height": 30,
     "tags": ["my hero academia", "anime"],
-    "image": "/media/product/preview/screenshot_122.jpg",
+    "image": "/media/product/preview/screenshot_122.avif",
     "url": "/products/html/momo-yaoyorozu-my-hero-academia.html"
   },
   {
@@ -1673,7 +1673,7 @@
     "price": 4175,
     "height": 30,
     "tags": ["bleach", "anime"],
-    "image": "/media/product/preview/screenshot_123.jpg",
+    "image": "/media/product/preview/screenshot_123.avif",
     "url": "/products/html/soi-fon-bleach-figurine.html"
   },
   {
@@ -1686,7 +1686,7 @@
     "price": 5425,
     "height": 30,
     "tags": ["nsfw", "bleach", "anime"],
-    "image": "/media/product/preview/screenshot_123-1.jpg",
+    "image": "/media/product/preview/screenshot_123-1.avif",
     "url": "/products/html/soi-fon-nsfw-bleach-figurine.html"
   },
   {
@@ -1699,7 +1699,7 @@
     "price": 4175,
     "height": 20,
     "tags": ["nsfw", "evangelion", "anime"],
-    "image": "/media/product/preview/screenshot_124.jpg",
+    "image": "/media/product/preview/screenshot_124.avif",
     "url": "/products/html/misato-evangelion-nsfw-figurine.html"
   },
   {
@@ -1712,7 +1712,7 @@
     "price": 9725,
     "height": 30,
     "tags": ["blue archive", "games"],
-    "image": "/media/product/preview/screenshot_125.jpg",
+    "image": "/media/product/preview/screenshot_125.avif",
     "url": "/products/html/sorasaki-hina-blue-archive-figure.html"
   },
   {
@@ -1725,7 +1725,7 @@
     "price": 12500,
     "height": 30,
     "tags": ["overwatch", "games", "anime"],
-    "image": "/media/product/preview/screenshot_126.jpg",
+    "image": "/media/product/preview/screenshot_126.avif",
     "url": "/products/html/dva-overwatch-mecha-figure.html"
   },
   {
@@ -1738,7 +1738,7 @@
     "price": 4175,
     "height": 30,
     "tags": ["overwatch", "games", "anime"],
-    "image": "/media/product/preview/screenshot_127.jpg",
+    "image": "/media/product/preview/screenshot_127.avif",
     "url": "/products/html/dva-overwatch-figurine.html"
   },
   {
@@ -1751,7 +1751,7 @@
     "price": 4175,
     "height": 23,
     "tags": ["elden ring", "games"],
-    "image": "/media/product/preview/screenshot_128.jpg",
+    "image": "/media/product/preview/screenshot_128.avif",
     "url": "/products/html/fire-keeper-elden-ring-figurine.html"
   },
   {
@@ -1764,7 +1764,7 @@
     "price": 7375,
     "height": 25,
     "tags": ["anime"],
-    "image": "/media/product/preview/screenshot_129.jpg",
+    "image": "/media/product/preview/screenshot_129.avif",
     "url": "/products/html/rory-mercury-gate-figure.html"
   },
   {
@@ -1777,7 +1777,7 @@
     "price": 5425,
     "height": 23,
     "tags": ["kill la kill", "anime", "nsfw"],
-    "image": "/media/product/preview/screenshot_130.jpg",
+    "image": "/media/product/preview/screenshot_130.avif",
     "url": "/products/html/satsuki-kiryuin-nsfw-kill-la-kill.html"
   },
   {
@@ -1790,7 +1790,7 @@
     "price": 5425,
     "height": 23,
     "tags": ["kill la kill", "anime", "nsfw"],
-    "image": "/media/product/preview/screenshot_131.jpg",
+    "image": "/media/product/preview/screenshot_131.avif",
     "url": "/products/html/ryuko-matoi-kill-la-kill-nsfw.html"
   },
   {
@@ -1803,7 +1803,7 @@
     "price": 2725,
     "height": 15,
     "tags": ["marvel", "chibi", "games"],
-    "image": "/media/product/preview/screenshot_132.jpg",
+    "image": "/media/product/preview/screenshot_132.avif",
     "url": "/products/html/jeff-the-land-shark-marvel-rivals.html"
   },
   {
@@ -1816,7 +1816,7 @@
     "price": 5425,
     "height": 30,
     "tags": ["nsfw"],
-    "image": "/media/product/preview/screenshot_133.jpg",
+    "image": "/media/product/preview/screenshot_133.avif",
     "url": "/products/html/ps5-chan-nsfw-fanmade-figurine.html"
   },
   {
@@ -1829,7 +1829,7 @@
     "price": 5425,
     "height": 25,
     "tags": ["cartoon", "nsfw"],
-    "image": "/media/product/preview/screenshot_134.jpg",
+    "image": "/media/product/preview/screenshot_134.avif",
     "url": "/products/html/lola-bunny-nsfw-maid-costume.html"
   },
   {
@@ -1842,7 +1842,7 @@
     "price": 845,
     "height": 3,
     "tags": ["anime", "keycap", "frieren"],
-    "image": "/media/product/preview/screenshot_135.jpg",
+    "image": "/media/product/preview/screenshot_135.avif",
     "url": "/products/html/frieren-custom-keycaps-keyboard.html"
   },
   {
@@ -1855,7 +1855,7 @@
     "price": 845,
     "height": 3,
     "tags": ["anime", "keycap"],
-    "image": "/media/product/preview/screenshot_136.jpg",
+    "image": "/media/product/preview/screenshot_136.avif",
     "url": "/products/html/anya-spy-family-keycap-custom.html"
   },
   {
@@ -1868,7 +1868,7 @@
     "price": 845,
     "height": 3,
     "tags": ["anime", "keycap"],
-    "image": "/media/product/preview/screenshot_137.jpg",
+    "image": "/media/product/preview/screenshot_137.avif",
     "url": "/products/html/maomao-apothecary-diaries-keycap-custom.html"
   },
   {
@@ -1881,7 +1881,7 @@
     "price": 650,
     "height": 3,
     "tags": ["anime", "keycap", "cyberpunk"],
-    "image": "/media/product/preview/screenshot_138.jpg",
+    "image": "/media/product/preview/screenshot_138.avif",
     "url": "/products/html/lucy-keycap-cyberpunk-edgerunners.html"
   },
   {
@@ -1894,7 +1894,7 @@
     "price": 525,
     "height": 3,
     "tags": ["anime", "keycap"],
-    "image": "/media/product/preview/screenshot_139.jpg",
+    "image": "/media/product/preview/screenshot_139.avif",
     "url": "/products/html/pochita-chainsaw-man-keycap-custom.html"
   }
   ]
