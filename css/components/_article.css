@@ -206,6 +206,7 @@ hr {
     border-radius: 6px;
     cursor: pointer;
     transition: transform 0.2s ease;
+    object-fit: cover
 }
 
 .photo-gallery button img:hover {
