@@ -10,37 +10,30 @@ h1 {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 50px;
-    padding-left: 10px;
     padding-right: 10px;
     font-size: 32px;
 }
 
 h2 {
     text-align: left;
-    padding-right: 6vw;
-    padding-left: 6vw;
     margin-bottom: 20px;
     margin-top: 10px;
-    border-bottom: 3px solid rgb(230, 54, 0);
+    border-bottom: 2px solid rgb(176, 0, 230);
     font-size: 26px;
 }
 
 h3 {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 40px;
     width: fit-content;
-    background-color: darkgrey;
-    color: white;
-    padding-left: 10px;
+    color: black;
     padding-right: 10px;
     font-size: 26px;
 }
 
 /* Абзацы */
 p {
-    font-family: 'Noto Sans JP', sans-serif;
-    margin-left: 40px;
+    font-family: 'Noto Sans', sans-serif;
     margin-right: 20px;
     margin-bottom: 1.2em;
     font-size: 1rem;
@@ -59,18 +52,81 @@ hr {
 /* Медиа-блоки */
 .media-block {
     padding: 8px;
-    margin: 25px auto;
-    background-color: #e6e6e6;
-    border-radius: 6px;
-    max-width: 800px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    width: 100%;
 }
 
 .media-block img, 
 .media-block video {
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 4px;
+}
+
+.media-block-4-3 img {
+    aspect-ratio: 4 / 3;
+}
+
+.media-block-small {
+    width: 100px;
+    float: left;
+    margin: 10px 15px 10px 0; /* отступы вокруг картинки */
+    object-fit: cover;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 10px 15px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.size-40 {
+    width: 40%;
+}
+
+.text-with-image {
+    display: flex;
+    align-items: center; /* текст выравнивается по верхнему краю картинки */
+    gap: 15px; /* отступ между текстом и картинкой */
+    padding: 20px 10px 10px 20px;
+    margin-bottom: 20px ;
+    box-shadow: rgba(0,0,0,0.25) 0px 0px 8px;
+}
+
+.text-with-image img {
+    width: 40%; /* размер картинки */
     height: auto;
     border-radius: 4px;
+    flex-shrink: 0; /* чтобы картинка не сжималась */
+}
+
+.text-with-image p {
+    font-size: 18px;
+    flex: 1; /* текст занимает оставшееся место */
+    margin: 0;
+}
+
+
+.highlight-paragraph {
+    display: flex;
+    align-items: center; /* выравнивание по вертикали */
+    justify-content: space-between; /* текст слева, картинка справа */
+    padding: 20px; /* отступы от краев контейнера */
+    border-radius: 8px;
+}
+
+.highlight-paragraph p {
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    margin: 0;
+    flex: 1;
+}
+
+.place-in-center {
+    text-align: center;
 }
 
 /* Подписи к медиа */
@@ -124,48 +180,93 @@ hr {
 }
 
 
-
 /* Код для медиа-блоков с видео */
 .media-block video {
     border: 1px solid #ccc;
     border-radius: 6px;
 }
 
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.photo-gallery button {
+    flex: 1 1 calc(100% / 6 - 10px); /* по умолчанию 6 фото в ряд, минус gap */
+    max-width: calc(100% / 6 - 10px);
+}
+
+.photo-gallery button img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.photo-gallery button img:hover {
+    transform: scale(1.05); /* лёгкое увеличение при наведении */
+}
+
+@media (max-width: 1335px) {
+    .text-with-image p {
+    font-size: 1.3vw;
+}
+
+}
+
+@media (max-width: 1000px) {
+
+    .photo-gallery button {
+    flex: 1 1 calc(100% / 3 - 10px); /* по умолчанию 3 фото в ряд, минус gap */
+    max-width: calc(100% / 3 - 10px);
+}
+
+}
+
 /* Мобильная адаптация */
 @media (max-width: 600px) {
+
     body {
-        margin: 15px 10px;
-        padding: 0 10px;
+        margin: 0;
+        padding: 0;
     }
 
     .article-content {
-        padding: 15px 20px;
+        padding: 0 0 20px 0;
+        margin: 0;
+        width: 100%;
     }
 
-    h2, h3 {
-        margin-left: 20px;
-        margin-right: 20px;
+    h3, p {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+
+    .media-block img {
+        padding: 6px;
     }
 
     h1 {
+    padding-left: 14px;
+    padding-right: 14px;
     font-size: 26px;
 }
 
 h2 {
     font-size: 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 h3 {
     font-size: 20px;
 }
 
-    p {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .article-content {
-        padding: 20px;
-        width: 95%;
-    }
 }

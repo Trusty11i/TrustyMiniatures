@@ -7,7 +7,9 @@ function initLightbox() {
     const nextBtn = lightbox.querySelector('.lightbox__next');
   
     let currentIndex = 0;
-    const imageSources = Array.from(thumbnails).map(img => img.src);
+    const imageSources = Array.from(thumbnails).map(img => {
+      return img.dataset.fullsize || img.src; // берём data-fullsize, если есть, иначе src
+    });
   
     thumbnails.forEach((thumb, index) => {
       thumb.addEventListener('click', () => {
